@@ -241,7 +241,7 @@
 									</li>
 									<li>
 										<img src="img/icons/lock.svg" alt="icon">
-										<span>Password</span><a href="javascript:void(0);">Change</a>
+										<span>Password</span><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#changePassword">Change</a>
 										<b>xxxx-xxxx-xxxx</b>
 									</li>
 									<li>
@@ -361,6 +361,74 @@
 	</div>
 	<!-- #################### Main Wrapper End #################### -->
 
+
+
+	<!-- Change Password Modal -->
+	<div class="modal fade sach-modal" id="changePassword" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+
+				<span class="modal-close" data-bs-dismiss="modal">
+					<i class="bi bi-x"></i>
+				</span>
+
+				<div class="px-md-5">
+					<div class="modal-heading text-center mt-5">
+						<h2>Change Password</h2>
+						<span>Please enter the following details to process further</span>
+					</div>
+
+					<div class="row">
+						<div class="col-12 sach-form">
+							<label class="form-label">Enter New Password <small>*</small></label>
+							<input type="password" class="form-control" value="123456789">
+						</div>
+						<div class="col-12 sach-form">
+							<label class="form-label">Re-Enter New Password <small>*</small></label>
+							<input type="password" class="form-control" value="123456789">
+						</div>
+					</div>
+
+					<div class="my-3 text-center">
+						<a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#passwordChangedSuccess" data-bs-dismiss="modal" class="btn-sach bg-sach-dark justify-content-center w-100">
+							<span>Change Password</span>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Mobile Number Changed Successfully Modal -->
+	<div class="modal fade sach-modal" id="passwordChangedSuccess" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+
+				<span class="modal-close" data-bs-dismiss="modal">
+					<i class="bi bi-x"></i>
+				</span>
+
+				<div class="px-md-5 text-center mt-5">
+
+					<img src="img/icons/success.svg" alt="Successfully">
+
+					<div class="modal-heading text-center my-4">
+						<h2>Successfully Changed!</h2>
+						<span>Your new password successfully updated.</span>
+					</div>
+
+					<div class="my-3 text-center">
+						<a href="javascript:void(0);" class="btn-sach bg-sach-dark justify-content-center w-100" data-bs-dismiss="modal">
+							<span>Continue</span>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
 
 	<!-- Required vendors -->
 	<script src="vendor/global/global.min.js"></script>
