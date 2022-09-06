@@ -884,7 +884,7 @@ div.sidebar-2-tabs>div[role="tab"] span {
 }
 
 /* ==================== Manage Testimonials Page End ==================== */
-/* ==================== Blog Management Page End ==================== */
+/* ==================== Blog Management Page Start ==================== */
 .blog-table-data {
     display: flex;
 }
@@ -1051,6 +1051,37 @@ div.sidebar-2-tabs>div[role="tab"] span {
     content: ':';
     position: relative;
     right: 5px;
+}
+
+.writeblog-wrp {
+    border-top: 1px solid var(--border-color);
+}
+
+.blog-header .btn-sach {
+    padding: 4px 12px;
+}
+
+.blog-header .btn-sach svg {
+    height: 20px;
+    width: 20px;
+}
+
+.blog-header .btn-sach span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.userName.blog-Auth .avtr {
+    height: 40px;
+    width: 40px;
+}
+
+.userName.blog-Auth .userData h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
 }
 
 /* ==================== Blog Management Page End ==================== */
@@ -1508,6 +1539,44 @@ div.sidebar-2-tabs>div[role="tab"] span {
     z-index: 9;
     padding: 0px 15px;
     box-shadow: 0px -10px 20px 0px rgb(0 0 0 / 10%);
+}
+
+.user-proPic {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    background: url(../img/icons/avtar.svg) no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 72px;
+    border: 2px solid var(--thead-bg);
+    transition: 400ms;
+    margin-bottom: 15px;
+}
+
+.user-proPic svg {
+    display: none;
+    z-index: 0;
+    height: auto;
+    width: 20px;
+    transition: 400ms;
+}
+
+.user-proPic::before {
+    content: '';
+    display: none;
+    position: absolute;
+    inset: 0;
+    background: rgb(0 0 0 / 25%);
+    border-radius: 72px;
+}
+
+.user-proPic:hover::before,
+.user-proPic:hover svg {
+    display: inherit;
 }
 
 /* ==================== User & Role Management Page End ==================== */
