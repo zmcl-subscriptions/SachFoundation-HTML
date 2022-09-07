@@ -258,6 +258,10 @@ textarea::-webkit-scrollbar-thumb {
     background: var(--bg-3) !important;
 }
 
+.btn-sach.btn-success:is(:hover, :focus, :active) {
+    box-shadow: 0 0 0 0.25rem rgba(86, 171, 49, 0.2) !important;
+}
+
 .btn-sach.btn-sm,
 .btn-sach-linear.btn-sm,
 .btn-sach-2.btn-sm {
@@ -521,6 +525,15 @@ textarea::-webkit-scrollbar-thumb {
     font-size: 14px;
     line-height: 24px;
     color: #212529;
+}
+
+.sach-form .form-control.not-form {
+    padding: 0px !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    font-size: 16px;
+    height: 2rem;
 }
 
 .sach-form .form-control.round {

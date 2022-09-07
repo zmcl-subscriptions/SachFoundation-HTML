@@ -583,12 +583,38 @@ div.sidebar-2-tabs>div[role="tab"] span {
     line-height: 24px;
 }
 
+.sub-page-title.flx-ttl {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid var(--border-color);
+}
+
 .sub-page-title h2 {
     font-weight: 700;
     font-size: 20px;
     line-height: 32px;
     letter-spacing: -0.5px;
     margin-bottom: 0px;
+}
+
+.sub-page-title .head-ico {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    margin-right: 12px;
+}
+
+.sub-page-title .head-ico.success {
+    background: var(--bg-3);
+}
+
+.sub-page-title .head-ico.danger {
+    background: var(--theme-red);
 }
 
 .sub-page-title-2 h2 {
@@ -1058,7 +1084,11 @@ div.sidebar-2-tabs>div[role="tab"] span {
 }
 
 .blog-header .btn-sach {
-    padding: 4px 12px;
+    padding: 6px 12px;
+}
+
+.blog-header .btn-sach:is(.btn-sach-linear, .btn-sach-linear-theme) {
+    padding: 5px 12px;
 }
 
 .blog-header .btn-sach svg {
@@ -1067,7 +1097,7 @@ div.sidebar-2-tabs>div[role="tab"] span {
 }
 
 .blog-header .btn-sach span {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
     line-height: 20px;
 }
@@ -1290,6 +1320,11 @@ div.sidebar-2-tabs>div[role="tab"] span {
     font-size: 14px;
     line-height: 24px;
     margin: 2px 0px 0px;
+    transition: 400ms;
+}
+
+.uploadThumb:hover {
+    border-color: var(--theme-orange);
 }
 
 .uploadThumb span {
