@@ -33,6 +33,7 @@ body {
 a {
     color: var(--theme-dark-2);
     text-decoration: none;
+    transition: 400ms;
 }
 
 a:hover {
@@ -253,6 +254,40 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ========== Sach-Dropdown End ========== */
+
+/* ========== Sach-Bullets Start ========== */
+ul.bullet-list {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul.bullet-list li {
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--theme-dark);
+}
+
+ul.bullet-list.sm li {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+ul.bullet-list li:first-child:before {
+    display: none;
+}
+
+ul.bullet-list li::before {
+    content: '•';
+    position: absolute;
+    left: -15px;
+}
+
+/* ========== Sach-Bullets End ========== */
 
 /* ========== Sach-Pills Start ========== */
 .sach-inline-pills {
