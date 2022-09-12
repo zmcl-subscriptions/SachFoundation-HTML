@@ -509,6 +509,8 @@ ul.bullet-list li::before {
 .sach-form .icon-group li .btn-outline-primary:active {
     background-color: rgb(238 108 77 / 10%);
     border-color: var(--theme-orange);
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: transparent;
 }
 
 .sach-form .icon-group li .btn-check:active+.btn-outline-primary:focus,

@@ -411,6 +411,13 @@ footer {
     background-attachment: fixed;
 }
 
+footer .logo {
+    width: auto;
+    height: 56px;
+    max-width: 100%;
+    margin: 5px 0px;
+}
+
 .social-links {
     display: flex;
     flex-direction: column;
