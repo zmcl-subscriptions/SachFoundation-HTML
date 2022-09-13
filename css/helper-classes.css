@@ -244,6 +244,81 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ========== Button End ========== */
+
+
+/* ========== UserName Start ========== */
+
+.userName {
+    display: flex;
+    align-items: center;
+}
+
+.userName .avtr {
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userName .avtr span {
+    font-weight: 600;
+    color: #fff;
+}
+
+.userName .avtr img {
+    max-width: 100%;
+    height: auto;
+}
+
+.userName .userData h4 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    margin: 0px;
+    color: var(--theme-dark);
+}
+
+.userName .userData ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.userName .userData ul li {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--theme-dark-2);
+    margin-right: 20px;
+    position: relative;
+}
+
+.userName .userData ul li::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 3px;
+    width: 3px;
+    border-radius: 10px;
+    background: currentColor;
+}
+
+.userName .userData ul li:last-child:after {
+    display: none;
+}
+
+.userName .userData ul li:last-child {
+    margin-right: 0px;
+}
+
+/* ========== UserName End ========== */
+
 /* ========== Sach-Dropdown Start ========== */
 /* .sach-dropdown .dropdown-toggle {
     padding: 0px;

@@ -4619,3 +4619,93 @@ ul.video-share-like li svg {
 }
 
 /* ========== CMS Pages End ========== */
+/* ========== Settings Page Start ========== */
+.settings-sec {
+    border-top: 1px solid var(--border-color);
+    min-height: calc(100vh - 104px);
+    margin-top: 4px;
+}
+
+.settings-sec .nav_tabs .userName {
+    border-bottom: 1px solid var(--border-color);
+    padding: 8px 0px;
+    margin-bottom: 15px;
+}
+
+.settings-sec .nav_tabs .userName .avtr {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.settings-sec .nav_tabs .userName .avtr img {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.settings-sec .nav_tabs .userName .userData h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.nav_tabs {
+    padding: 40px 0px 0px;
+    border-right: 1px solid var(--border-color);
+    padding-right: 24px;
+}
+
+.nav_tabs .nav .nav-link {
+    padding: 10px 20px;
+    color: var(--theme-dark-2);
+    border-radius: 8px;
+    text-align: left;
+    margin-bottom: 10px;
+    transition: 400ms;
+}
+
+.nav_tabs .nav .nav-link:hover {
+    background: rgba(238, 108, 77, 0.08);
+}
+
+.nav_tabs .nav .nav-link.active {
+    background: rgba(238, 108, 77, 0.08);
+    color: var(--theme-orange);
+}
+
+.nav_tabs .nav .nav-link img {
+    margin-right: 10px;
+}
+
+.nav_tabs .nav .nav-link span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.nav_content .tab-content {
+    padding: 40px 0px 0px;
+}
+
+/* ============= */
+.userSettingCont {
+    padding: 0px;
+}
+
+.userSettingCont .settHead {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+}
+
+.userSettingCont .settPara {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+/* ========== Settings Page End ========== */
