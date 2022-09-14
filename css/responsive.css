@@ -11,7 +11,7 @@
     }
 
     .show:not(.menu-toggle) .nav-header {
-        background-color: transparent;
+        background-color: transparent !important;
     }
 
     .show.menu-toggle .nav-header .brand-logo img {
