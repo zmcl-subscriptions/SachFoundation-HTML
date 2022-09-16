@@ -2254,6 +2254,8 @@ ul.b-list li::before {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .new-event .new-event-btm span {
@@ -4835,6 +4837,7 @@ ul.video-share-like li svg {
 
 /* ========================================= */
 .my_event {
+    position: relative;
     display: flex;
     border: 1px solid #DFD6E5;
     border-radius: 16px;
@@ -4849,7 +4852,7 @@ ul.video-share-like li svg {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 12%;
+    width: 8%;
 }
 
 .my_event .my_event_dt span {
@@ -4871,7 +4874,7 @@ ul.video-share-like li svg {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 88%;
+    width: 92%;
     padding: 10px 16px;
 }
 
@@ -4901,6 +4904,7 @@ ul.video-share-like li svg {
     font-weight: 600;
     font-size: 16px;
     line-height: 28px;
+    margin: 0;
 }
 
 .my_event .event-data-wrp ul.event_features {
@@ -4951,6 +4955,138 @@ ul.video-share-like li svg {
     font-size: 14px;
     line-height: 24px;
     border-radius: 8px;
+}
+
+.my_event .event-data-wrp .btn_wrp a.btn.attended {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.like_share {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 1;
+}
+
+.like_share span {
+    border-radius: 32px;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.like_share span img {
+    height: 16px;
+    width: 16px;
+}
+
+.watch_recording {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 3px 20px;
+}
+
+.no_profile_data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 50vh;
+    gap: 15px;
+}
+
+.no_profile_data img {
+    width: 140px;
+    height: auto;
+    max-width: 100%;
+}
+
+.no_profile_data span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.no_profile_data a.btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 7px 20px;
+}
+
+.my_blogs {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    margin: 20px 0px;
+}
+
+.my_blogs .blog_thumb {}
+
+.my_blogs .blog_thumb img {
+    object-fit: cover;
+    border-radius: 8px;
+    height: 132px;
+    width: 132px;
+}
+
+.my_blogs .blog_dtls {}
+
+.my_blogs .blog_dtls .stats li {
+    color: var(--theme-dark-2);
+}
+
+.my_blogs .blog_dtls .stats li a.btn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    color: #fff;
+    padding: 0px 6px;
+    border-radius: 4px;
+}
+
+.my_blogs .blog_dtls .stats li a.btn.success {
+    background: var(--s-success);
+}
+
+.my_blogs .blog_dtls .stats li a.btn.warning {
+    background: var(--s-warning);
+}
+
+.my_blogs .blog_dtls .stats li a.btn.danger {
+    background: var(--s-danger);
+}
+
+.my_blogs .blog_dtls h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    margin: 0px;
+}
+
+.my_blogs .blog_dtls .b_tags :is(li, li::before) {
+    color: var(--theme-orange);
 }
 
 /* ========================================= */

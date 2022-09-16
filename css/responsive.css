@@ -188,6 +188,33 @@
         font-size: 25px;
         line-height: 30px;
     }
+
+    .settings-sec .nav_tabs {
+        padding: 20px 0px 0px;
+        padding-right: 0px;
+        border: none;
+    }
+
+    .settings-sec .nav_tabs .nav .nav-link {
+        padding: 10px;
+    }
+
+    .settings-sec .nav-pills {
+        flex-direction: row !important;
+        overflow: auto;
+        flex-wrap: nowrap;
+        gap: 5px;
+    }
+
+    .settings-sec .nav-pills button img {
+        margin: auto !important;
+        display: block;
+    }
+
+    .settings-sec .nav-pills button span {
+        white-space: nowrap;
+        font-size: 14px;
+    }
 }
 
 /* ========== Small devices (landscape phones, 576px and up) ========== */

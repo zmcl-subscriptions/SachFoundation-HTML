@@ -19,6 +19,10 @@
     --abs-bg-2: #EDEDF9;
     --abs-bg-3: #E6F2EE;
     --abs-bg-4: #FDEECB;
+
+    --s-success: #1FBB59;
+    --s-warning: #FFA620;
+    --s-danger: #EF5A46;
 }
 
 body {
@@ -53,6 +57,10 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background: #dadada
+}
+
+hr {
+    background-color: var(--border-color);
 }
 
 /* ========== Preloader ========== */
@@ -385,12 +393,100 @@ body::-webkit-scrollbar-thumb {
 
 /* ========== Sach-Dropdown End ========== */
 
+
+/* ========== Sach Modal Start ========== */
+.sach-modal .modal-content {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 15px;
+}
+
+.sach-modal .modal-close {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 400ms;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sach-modal .modal-close:hover {
+    background-color: var(--theme-dark);
+    box-shadow: 0 0 0 2px var(--border-color);
+}
+
+.sach-modal .modal-close i {
+    font-size: 24px;
+    transition: 400ms;
+    color: var(--theme-dark-2);
+    text-shadow: 0px 0px 1px var(--theme-dark-2);
+}
+
+.sach-modal .modal-close i:hover {
+    transform: rotate(180deg);
+    color: #fff;
+}
+
+.sach-modal .modal-close svg {
+    width: 24px;
+    height: 24px;
+    transition: 400ms;
+}
+
+.sach-modal .modal-close svg:hover {
+    transform: rotate(180deg);
+}
+
+.sach-modal .modal-btn {
+    position: relative;
+    padding-top: 20px;
+}
+
+.sach-modal .modal-btn::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background: var(--border-color);
+}
+
+.sach-modal .btn-sach {
+    padding: 8px 20px;
+}
+
+.modal-heading {
+    margin-bottom: 15px;
+}
+
+.modal-heading h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+.modal-heading span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--theme-dark-2);
+}
+
+/* ========== Sach Modal End ========== */
+
 /* ========== Sach-Bullets Start ========== */
 ul.bullet-list {
     padding: 0px;
     margin: 0px;
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
