@@ -632,6 +632,15 @@ ul.bullet-list li::before {
     margin-block: 10px;
 }
 
+.sach-form .form-link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: var(--theme-orange);
+    float: right;
+}
+
 .sach-form .form-label {
     color: var(--theme-dark-2);
     font-weight: 600;
