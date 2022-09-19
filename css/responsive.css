@@ -215,6 +215,52 @@
         white-space: nowrap;
         font-size: 14px;
     }
+
+    .my_event {
+        flex-direction: column;
+    }
+
+    .my_event .my_event_dt {
+        width: auto;
+        flex-direction: revert;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        height: 70px;
+        padding: 0px 10px;
+    }
+
+    .my_event .event-data-wrp {
+        width: auto;
+        padding: 8px;
+    }
+
+    .my_event .event-data-wrp ul.event_features {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .my_blogs {
+        flex-direction: column;
+    }
+
+    .my_blogs .blog_thumb,
+    .my_blogs .blog_thumb img {
+        width: 100%;
+    }
+
+    .notificaiton-btn-section {
+        flex-wrap: wrap;
+    }
+
+    .n-btn-inner .sach-btn-group {
+        margin-left: 0px !important;
+    }
+
+    .sach-btn-group label.btn {
+        padding: 6px 8px;
+    }
 }
 
 /* ========== Small devices (landscape phones, 576px and up) ========== */

@@ -232,7 +232,7 @@
         </div>
         <div class="col-md-9">
           <div class="nav_content">
-            <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-content mb-4" id="v-pills-tabContent">
               <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-tab-1" tabindex="0">
                 <div class="userSettingCont">
                   <div class="settHead">My Library</div>
@@ -571,7 +571,7 @@
                           <div class="no_profile_data">
                             <img src="img/icons/popper.svg" alt="No-Data">
                             <span>No Events yet!</span>
-                            <a href="#" class="btn btn-sach bg-sach">Explore Events</a>
+                            <a href="#" class="btn btn-sach bg-sach btn-sm">Explore Events</a>
                           </div>
                         </div>
 
@@ -638,7 +638,7 @@
                           <div class="no_profile_data">
                             <img src="img/icons/chat.svg" alt="No-Data">
                             <span>You have no upcoming bookings - start sharing a <br /> conversation with a Counselloer.</span>
-                            <a href="#" class="btn btn-sach bg-sach">Explore Counsellors</a>
+                            <a href="#" class="btn btn-sach bg-sach btn-sm">Explore Counsellors</a>
                           </div>
                         </div>
 
@@ -647,7 +647,7 @@
                           <div class="no_profile_data">
                             <img src="img/icons/chat.svg" alt="No-Data">
                             <span>You have no upcoming bookings - start sharing a <br /> conversation with a Counselloer.</span>
-                            <a href="#" class="btn btn-sach bg-sach">Explore Counsellors</a>
+                            <a href="#" class="btn btn-sach bg-sach btn-sm">Explore Counsellors</a>
                           </div>
                         </div>
 
@@ -656,7 +656,7 @@
                           <div class="no_profile_data">
                             <img src="img/icons/chat.svg" alt="No-Data">
                             <span>You have no upcoming bookings - start sharing a <br /> conversation with a Counselloer.</span>
-                            <a href="#" class="btn btn-sach bg-sach">Explore Counsellors</a>
+                            <a href="#" class="btn btn-sach bg-sach btn-sm">Explore Counsellors</a>
                           </div>
                         </div>
 
@@ -783,7 +783,7 @@
                           <div class="no_profile_data">
                             <img src="img/icons/note.svg" alt="No-Data">
                             <span>No Stories yet!</span>
-                            <a href="#" class="btn btn-sach bg-sach">Write Story</a>
+                            <a href="#" class="btn btn-sach bg-sach btn-sm">Write Story</a>
                           </div>
                         </div>
 
@@ -1067,6 +1067,49 @@
                   <div class="settHead">Testimonial</div>
                   <div class="settPara">In publishing and graphic design, Lorem ipsum is a placeholder text commonly</div>
                 </div>
+                <div class="row mt-4">
+                  <div class="col-lg-4 col-md-4 sach-form">
+                    <label class="form-label">Language Type <small>*</small></label>
+                    <select class="form-control">
+                      <option>English</option>
+                      <option>Hindi</option>
+                      <option>Tamil</option>
+                      <option>Telugu</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-12 col-md-12 sach-form">
+                    <label class="form-label">Write Review</label>
+                    <textarea rows="4" placeholder="Write here..." class="form-control">I just wanted to share a quick note and let you know that you guys do a really good job. I'm glad I decided to work with you. It's really great how easy your websites are to update and manage...</textarea>
+                  </div>
+                  <div class="col-lg-12 col-md-12 sach-form">
+                    <label class="form-label">Write Review</label>
+                    <textarea rows="4" placeholder="Write here..." class="form-control" readonly>I just wanted to share a quick note and let you know that you guys do a really good job. I'm glad I decided to work with you. It's really great how easy your websites are to update and manage...</textarea>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="testimonial-staus">
+                      <label>Status:</label>
+                      <span class="success">Approved</span>
+                      <span class="warning">Approval Pending</span>
+                      <span class="danger">Cancelled</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 sach-form">
+                    <label class="form-label">Reason</label>
+                    <textarea placeholder="Write here..." class="form-control cancelled" readonly>I just wanted to share a quick note and let you know that you guys do a really good job. I'm glad I decided to work with you. It's really great how easy your websites are to update and manage...</textarea>
+                  </div>
+                  <div class="col-12">
+                    <hr class="admin-hr my-3">
+                    <a href="javascript:void(0);" class="btn btn-sach bg-sach btn-sm ms-2">
+                      <span>Post</span>
+                    </a>
+                    <a href="javascript:void(0);" class="btn btn-sach bg-sach btn-sm ms-2">
+                      <span>Edit</span>
+                    </a>
+                    <a href="javascript:void(0);" class="btn btn-sach btn-sm btn-sach-linear ms-2">
+                      <span>Cancel</span>
+                    </a>
+                  </div>
+                </div>
               </div>
 
               <div class="tab-pane fade" id="v-pills-7" role="tabpanel" aria-labelledby="v-pills-tab-7" tabindex="0">
@@ -1093,6 +1136,11 @@
                         <!-- Tab - 1 -->
                         <div class="tab-pane fade show active" id="pills-11" role="tabpanel" aria-labelledby="pills-tab-11">
                           <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                              <div class="user_profile_pic">
+                                <img src="img/Dr.SubhashChandra.png" alt="User-Profile-Picture">
+                              </div>
+                            </div>
                             <div class="col-lg-6 col-md-6 sach-form">
                               <label class="form-label">Full Name</label>
                               <input type="text" class="form-control" id="name" value="Araa Rashek">
@@ -1110,8 +1158,16 @@
                               <label class="form-label">Mobile Number</label>
                               <input type="text" class="form-control" id="mobileNum" value="+91 9999009900">
                             </div>
+                            <div class="col-lg-6 col-md-6 sach-form">
+                              <label class="form-label">Change Language</label>
+                              <select class="form-control">
+                                <option>English</option>
+                                <option>Hindi</option>
+                                <option>Marathi</option>
+                              </select>
+                            </div>
                             <div class="col-12 mt-3">
-                              <a href="javascript:void(0);" class="btn-sach bg-sach-dark">
+                              <a href="javascript:void(0);" class="btn btn-sach bg-sach btn-sm">
                                 <span>Save Change</span>
                               </a>
                             </div>
@@ -1120,12 +1176,224 @@
 
                         <!-- Tab - 2 -->
                         <div class="tab-pane fade" id="pills-12" role="tabpanel" aria-labelledby="pills-tab-12">
+                          <div class="row">
+                            <div class="col-lg-8 col-md-8">
+                              <div class="row">
 
+                                <div class="col-lg-12 col-md-12 sach-form">
+                                  <label class="form-label">Enter Old Password <small>*</small></label>
+                                  <input type="password" class="form-control" id="oldPassword" value="xxxxxxxxxx">
+                                  <div class="passToggle">
+                                    <svg class="showPass" viewBox="0 0 24 24" fill="#4D4354" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 13.5C11.173 13.5 10.5 12.827 10.5 12C10.5 11.9869 10.5031 11.9741 10.5061 11.9613L10.5061 11.9613C10.5088 11.9496 10.5116 11.9379 10.512 11.926L12.074 13.488C12.0621 13.4885 12.0504 13.4912 12.0388 13.494C12.0259 13.497 12.0131 13.5 12 13.5ZM4.70705 3.29301C4.31605 2.90201 3.68405 2.90201 3.29305 3.29301C2.90205 3.68401 2.90205 4.31601 3.29305 4.70701L8.92305 10.337C8.64705 10.846 8.50005 11.411 8.50005 12C8.50005 13.93 10.0701 15.5 12 15.5C12.5891 15.5 13.154 15.353 13.663 15.077L19.293 20.707C19.488 20.902 19.744 21 20 21C20.2561 21 20.5121 20.902 20.7071 20.707C21.0981 20.316 21.0981 19.684 20.7071 19.293L4.70705 3.29301ZM12.2198 16.9976C7.91475 17.0976 5.10475 13.4146 4.17275 11.9956C4.62975 11.2816 5.39575 10.2356 6.45575 9.28461L5.04475 7.87261C3.52275 9.26161 2.54675 10.7796 2.13275 11.5026C1.95575 11.8106 1.95575 12.1896 2.13275 12.4976C2.76175 13.5946 6.16175 18.9996 12.0247 18.9996C12.1067 18.9996 12.1888 18.9986 12.2708 18.9966C13.4548 18.9666 14.5268 18.7106 15.4978 18.3266L13.9178 16.7466C13.3828 16.8886 12.8198 16.9826 12.2198 16.9976ZM11.7297 5.00341C17.7048 4.81641 21.2297 10.3904 21.8678 11.5024C22.0438 11.8104 22.0438 12.1894 21.8678 12.4974C21.4527 13.2204 20.4767 14.7384 18.9548 16.1274L17.5437 14.7154C18.6038 13.7644 19.3708 12.7184 19.8267 12.0044C18.8948 10.5854 16.0717 6.89441 11.7808 7.00241C11.1807 7.01741 10.6178 7.11141 10.0817 7.25341L8.50175 5.67341C9.47375 5.28941 10.5448 5.03341 11.7297 5.00341Z" />
+                                    </svg>
+                                    <svg class="hidePass" viewBox="0 0 24 24" fill="#EE6C4D" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 13.5C11.173 13.5 10.5 12.827 10.5 12C10.5 11.173 11.173 10.5 12 10.5C12.827 10.5 13.5 11.173 13.5 12C13.5 12.827 12.827 13.5 12 13.5ZM12 8.50002C10.0701 8.50002 8.50005 10.07 8.50005 12C8.50005 13.93 10.0701 15.5 12 15.5C13.93 15.5 15.5 13.93 15.5 12C15.5 10.07 13.93 8.50002 12 8.50002ZM12.2197 16.9976C7.91375 17.0976 5.10475 13.4146 4.17275 11.9956C5.19875 10.3906 7.78275 7.10462 11.7807 7.00262C16.0697 6.89362 18.8948 10.5856 19.8267 12.0046C18.8018 13.6096 16.2168 16.8956 12.2197 16.9976ZM21.8678 11.5026C21.2297 10.3906 17.7057 4.81662 11.7297 5.00362C6.20175 5.14362 2.98675 10.0136 2.13275 11.5026C1.95575 11.8106 1.95575 12.1896 2.13275 12.4976C2.76175 13.5946 6.16175 18.9996 12.0247 18.9996C12.1067 18.9996 12.1888 18.9986 12.2708 18.9966C17.7977 18.8556 21.0138 13.9866 21.8678 12.4976C22.0438 12.1896 22.0438 11.8106 21.8678 11.5026Z" />
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 sach-form">
+                                  <label class="form-label">Enter New Password <small>*</small></label>
+                                  <input type="password" class="form-control" id="newPassword">
+                                  <div class="passToggle">
+                                    <svg class="showPass" viewBox="0 0 24 24" fill="#4D4354" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 13.5C11.173 13.5 10.5 12.827 10.5 12C10.5 11.9869 10.5031 11.9741 10.5061 11.9613L10.5061 11.9613C10.5088 11.9496 10.5116 11.9379 10.512 11.926L12.074 13.488C12.0621 13.4885 12.0504 13.4912 12.0388 13.494C12.0259 13.497 12.0131 13.5 12 13.5ZM4.70705 3.29301C4.31605 2.90201 3.68405 2.90201 3.29305 3.29301C2.90205 3.68401 2.90205 4.31601 3.29305 4.70701L8.92305 10.337C8.64705 10.846 8.50005 11.411 8.50005 12C8.50005 13.93 10.0701 15.5 12 15.5C12.5891 15.5 13.154 15.353 13.663 15.077L19.293 20.707C19.488 20.902 19.744 21 20 21C20.2561 21 20.5121 20.902 20.7071 20.707C21.0981 20.316 21.0981 19.684 20.7071 19.293L4.70705 3.29301ZM12.2198 16.9976C7.91475 17.0976 5.10475 13.4146 4.17275 11.9956C4.62975 11.2816 5.39575 10.2356 6.45575 9.28461L5.04475 7.87261C3.52275 9.26161 2.54675 10.7796 2.13275 11.5026C1.95575 11.8106 1.95575 12.1896 2.13275 12.4976C2.76175 13.5946 6.16175 18.9996 12.0247 18.9996C12.1067 18.9996 12.1888 18.9986 12.2708 18.9966C13.4548 18.9666 14.5268 18.7106 15.4978 18.3266L13.9178 16.7466C13.3828 16.8886 12.8198 16.9826 12.2198 16.9976ZM11.7297 5.00341C17.7048 4.81641 21.2297 10.3904 21.8678 11.5024C22.0438 11.8104 22.0438 12.1894 21.8678 12.4974C21.4527 13.2204 20.4767 14.7384 18.9548 16.1274L17.5437 14.7154C18.6038 13.7644 19.3708 12.7184 19.8267 12.0044C18.8948 10.5854 16.0717 6.89441 11.7808 7.00241C11.1807 7.01741 10.6178 7.11141 10.0817 7.25341L8.50175 5.67341C9.47375 5.28941 10.5448 5.03341 11.7297 5.00341Z" />
+                                    </svg>
+                                    <svg class="hidePass" viewBox="0 0 24 24" fill="#EE6C4D" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 13.5C11.173 13.5 10.5 12.827 10.5 12C10.5 11.173 11.173 10.5 12 10.5C12.827 10.5 13.5 11.173 13.5 12C13.5 12.827 12.827 13.5 12 13.5ZM12 8.50002C10.0701 8.50002 8.50005 10.07 8.50005 12C8.50005 13.93 10.0701 15.5 12 15.5C13.93 15.5 15.5 13.93 15.5 12C15.5 10.07 13.93 8.50002 12 8.50002ZM12.2197 16.9976C7.91375 17.0976 5.10475 13.4146 4.17275 11.9956C5.19875 10.3906 7.78275 7.10462 11.7807 7.00262C16.0697 6.89362 18.8948 10.5856 19.8267 12.0046C18.8018 13.6096 16.2168 16.8956 12.2197 16.9976ZM21.8678 11.5026C21.2297 10.3906 17.7057 4.81662 11.7297 5.00362C6.20175 5.14362 2.98675 10.0136 2.13275 11.5026C1.95575 11.8106 1.95575 12.1896 2.13275 12.4976C2.76175 13.5946 6.16175 18.9996 12.0247 18.9996C12.1067 18.9996 12.1888 18.9986 12.2708 18.9966C17.7977 18.8556 21.0138 13.9866 21.8678 12.4976C22.0438 12.1896 22.0438 11.8106 21.8678 11.5026Z" />
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 sach-form">
+                                  <label class="form-label">Re-Enter New Password <small>*</small></label>
+                                  <input type="password" class="form-control" id="renewPassword">
+                                  <div class="passToggle">
+                                    <svg class="showPass" viewBox="0 0 24 24" fill="#4D4354" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 13.5C11.173 13.5 10.5 12.827 10.5 12C10.5 11.9869 10.5031 11.9741 10.5061 11.9613L10.5061 11.9613C10.5088 11.9496 10.5116 11.9379 10.512 11.926L12.074 13.488C12.0621 13.4885 12.0504 13.4912 12.0388 13.494C12.0259 13.497 12.0131 13.5 12 13.5ZM4.70705 3.29301C4.31605 2.90201 3.68405 2.90201 3.29305 3.29301C2.90205 3.68401 2.90205 4.31601 3.29305 4.70701L8.92305 10.337C8.64705 10.846 8.50005 11.411 8.50005 12C8.50005 13.93 10.0701 15.5 12 15.5C12.5891 15.5 13.154 15.353 13.663 15.077L19.293 20.707C19.488 20.902 19.744 21 20 21C20.2561 21 20.5121 20.902 20.7071 20.707C21.0981 20.316 21.0981 19.684 20.7071 19.293L4.70705 3.29301ZM12.2198 16.9976C7.91475 17.0976 5.10475 13.4146 4.17275 11.9956C4.62975 11.2816 5.39575 10.2356 6.45575 9.28461L5.04475 7.87261C3.52275 9.26161 2.54675 10.7796 2.13275 11.5026C1.95575 11.8106 1.95575 12.1896 2.13275 12.4976C2.76175 13.5946 6.16175 18.9996 12.0247 18.9996C12.1067 18.9996 12.1888 18.9986 12.2708 18.9966C13.4548 18.9666 14.5268 18.7106 15.4978 18.3266L13.9178 16.7466C13.3828 16.8886 12.8198 16.9826 12.2198 16.9976ZM11.7297 5.00341C17.7048 4.81641 21.2297 10.3904 21.8678 11.5024C22.0438 11.8104 22.0438 12.1894 21.8678 12.4974C21.4527 13.2204 20.4767 14.7384 18.9548 16.1274L17.5437 14.7154C18.6038 13.7644 19.3708 12.7184 19.8267 12.0044C18.8948 10.5854 16.0717 6.89441 11.7808 7.00241C11.1807 7.01741 10.6178 7.11141 10.0817 7.25341L8.50175 5.67341C9.47375 5.28941 10.5448 5.03341 11.7297 5.00341Z" />
+                                    </svg>
+                                    <svg class="hidePass" viewBox="0 0 24 24" fill="#EE6C4D" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 13.5C11.173 13.5 10.5 12.827 10.5 12C10.5 11.173 11.173 10.5 12 10.5C12.827 10.5 13.5 11.173 13.5 12C13.5 12.827 12.827 13.5 12 13.5ZM12 8.50002C10.0701 8.50002 8.50005 10.07 8.50005 12C8.50005 13.93 10.0701 15.5 12 15.5C13.93 15.5 15.5 13.93 15.5 12C15.5 10.07 13.93 8.50002 12 8.50002ZM12.2197 16.9976C7.91375 17.0976 5.10475 13.4146 4.17275 11.9956C5.19875 10.3906 7.78275 7.10462 11.7807 7.00262C16.0697 6.89362 18.8948 10.5856 19.8267 12.0046C18.8018 13.6096 16.2168 16.8956 12.2197 16.9976ZM21.8678 11.5026C21.2297 10.3906 17.7057 4.81662 11.7297 5.00362C6.20175 5.14362 2.98675 10.0136 2.13275 11.5026C1.95575 11.8106 1.95575 12.1896 2.13275 12.4976C2.76175 13.5946 6.16175 18.9996 12.0247 18.9996C12.1067 18.9996 12.1888 18.9986 12.2708 18.9966C17.7977 18.8556 21.0138 13.9866 21.8678 12.4976C22.0438 12.1896 22.0438 11.8106 21.8678 11.5026Z" />
+                                    </svg>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-12 mt-4">
+                                  <div class="h4 pass-title">Password requirements:</div>
+                                  <div class="h5 pass-sub-title">Ensure that these requirements are met:</div>
+                                  <ul class="pass-instructions">
+                                    <li>Minimum 8 characters long - the more, the better</li>
+                                    <li>At least one lowercase character</li>
+                                    <li>At least one uppercase character</li>
+                                    <li>At least one number, symbol, or whitespace character</li>
+                                  </ul>
+                                </div>
+
+                              </div>
+                            </div>
+
+                            <div class="col-12">
+
+                              <hr class="admin-hr mb-4">
+
+                              <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#passwordChanged" class="btn btn-sach bg-sach-dark btn-sm">
+                                <span>Change Password</span>
+                              </a>
+                            </div>
+
+                          </div>
                         </div>
 
                         <!-- Tab - 3 -->
                         <div class="tab-pane fade" id="pills-13" role="tabpanel" aria-labelledby="pills-tab-13">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="sub-page-title pt-4">
+                                <h2>Notification Settings</h2>
+                                <span>We need permission from your browser to show notifications. <b>Request permission</b></span>
+                              </div>
 
+                              <hr class="admin-hr">
+
+                              <div class="sub-page-title pt-4">
+                                <h2>Smart Notificaition</h2>
+                                <span>When I'm active on the web or app, delay sending notifications.</span>
+                              </div>
+
+                              <div class="my-4">
+                                <div class="sach-check form-check d-inline-block">
+                                  <input class="form-check-input" type="radio" name="waitTime" id="waitTime">
+                                  <label class="form-check-label nofity-txt" for="waitTime">Wait</label>
+                                </div>
+                                <select name="timeDuration" id="timeDuration" class="cstm-slct bg-white mx-3">
+                                  <option>5 minutes</option>
+                                  <option>15 minutes</option>
+                                  <option>30 minutes</option>
+                                  <option>1 hour</option>
+                                  <option>2 hours</option>
+                                  <option>Custom</option>
+                                </select>
+                                <span class="nofity-txt">to send notification</span>
+                              </div>
+
+                              <div class="my-4">
+                                <h2 class="nofiy-ttl">Do not disturb me on my days off</h2>
+                                <div class="btn-group sach-btn-group" role="group">
+                                  <input type="checkbox" class="btn-check" id="Mon" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="Mon">Mon</label>
+
+                                  <input type="checkbox" class="btn-check" id="Tue" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="Tue">Tue</label>
+
+                                  <input type="checkbox" class="btn-check" id="Wed" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="Wed">Wed</label>
+
+                                  <input type="checkbox" class="btn-check" id="Thu" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="Thu">Thu</label>
+
+                                  <input type="checkbox" class="btn-check" id="Fri" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="Fri">Fri</label>
+
+                                  <input type="checkbox" class="btn-check" id="Sat" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="Sat">Sat</label>
+
+                                  <input type="checkbox" class="btn-check" id="Sun" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="Sun">Sun</label>
+                                </div>
+                              </div>
+
+                              <div class="sub-page-title pt-4">
+                                <h2>General Notificaition</h2>
+                                <span>Manage your Email, mobile and desktop notificaitons.</span>
+                              </div>
+
+                              <div class="notificaiton-btn-section">
+                                <div class="n-btn-inner">
+                                  <h4>Activity Update</h4>
+                                  <span>New User's, New Videos, Events , @Mentions</span>
+                                </div>
+
+                                <div class="btn-group sach-btn-group ms-md-auto" role="group">
+                                  <input type="checkbox" class="btn-check" id="activityNone" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="activityNone">None</label>
+
+                                  <input type="checkbox" class="btn-check" id="activityEmail" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="activityEmail">Email</label>
+
+                                  <input type="checkbox" class="btn-check" id="activityApp" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="activityApp">In-App</label>
+
+                                  <input type="checkbox" class="btn-check" id="activityBrowser" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="activityBrowser">Broswer</label>
+                                </div>
+                              </div>
+
+                              <div class="notificaiton-btn-section">
+                                <div class="n-btn-inner">
+                                  <h4>New Comments</h4>
+                                </div>
+
+                                <div class="btn-group sach-btn-group ms-md-auto" role="group">
+                                  <input type="checkbox" class="btn-check" id="nCommentNone" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="nCommentNone">None</label>
+
+                                  <input type="checkbox" class="btn-check" id="nCommentEmail" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="nCommentEmail">Email</label>
+
+                                  <input type="checkbox" class="btn-check" id="nCommentApp" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="nCommentApp">In-App</label>
+
+                                  <input type="checkbox" class="btn-check" id="nCommentBrowser" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="nCommentBrowser">Broswer</label>
+                                </div>
+                              </div>
+
+                              <div class="notificaiton-btn-section">
+                                <div class="n-btn-inner">
+                                  <h4>Resolved Comments</h4>
+                                </div>
+
+                                <div class="btn-group sach-btn-group ms-md-auto" role="group">
+                                  <input type="checkbox" class="btn-check" id="rCommentNone" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="rCommentNone">None</label>
+
+                                  <input type="checkbox" class="btn-check" id="rCommentEmail" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="rCommentEmail">Email</label>
+
+                                  <input type="checkbox" class="btn-check" id="rCommentApp" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="rCommentApp">In-App</label>
+
+                                  <input type="checkbox" class="btn-check" id="rCommentBrowser" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="rCommentBrowser">Broswer</label>
+                                </div>
+                              </div>
+
+                              <div class="notificaiton-btn-section">
+                                <div class="n-btn-inner">
+                                  <h4>Reactions</h4>
+                                </div>
+
+                                <div class="btn-group sach-btn-group ms-md-auto" role="group">
+                                  <input type="checkbox" class="btn-check" id="reactionsNone" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="reactionsNone">None</label>
+
+                                  <input type="checkbox" class="btn-check" id="reactionsEmail" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="reactionsEmail">Email</label>
+
+                                  <input type="checkbox" class="btn-check" id="reactionsApp" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="reactionsApp">In-App</label>
+
+                                  <input type="checkbox" class="btn-check" id="reactionsBrowser" autocomplete="off">
+                                  <label class="btn btn-outline-primary" for="reactionsBrowser">Broswer</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
 
                       </div>
@@ -1244,9 +1512,7 @@
     </div>
   </div>
 
-  <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/owlCarousel/js/owl.carousel.min.js"></script>
   <script src="vendor/aos/js/aos.min.js"></script>
   <script src="js/script.js"></script>
 </body>
