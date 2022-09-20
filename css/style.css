@@ -4102,20 +4102,20 @@ ul.video-share-like li svg {
 }
 
 
-.login-modal .resendOTP a {
+.resendOTP a {
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
 }
 
-.login-modal .resendOTP span {
+.resendOTP span {
     font-weight: 400;
     font-size: 14px;
     line-height: 28px;
     float: right;
 }
 
-.login-modal .resendOTP span img {
+.resendOTP span img {
     position: relative;
     top: -2px;
     margin-right: 4px;
@@ -5535,3 +5535,42 @@ ul.sach-pills li span:hover {
 
 /* ========================================= */
 /* ========== Settings Page End ========== */
+/* ========== Comment Section Start ========== */
+.comment-section {
+    width: 40vw;
+    height: 100vh;
+    background: #fff;
+    padding: 30px 20px 10px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 999;
+    box-shadow: -21px 0px 45px rgb(32 20 41 / 20%);
+}
+
+.comment-section .comment-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment-section .comment-head .h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    margin-bottom: 0px;
+    color: var(--theme-dark);
+}
+
+.comment-section .comment-head select.form-control {
+    width: auto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--theme-dark);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+/* ========== Comment Section End ========== */

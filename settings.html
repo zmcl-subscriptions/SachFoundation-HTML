@@ -688,17 +688,17 @@
                         <div class="tab-pane fade show active" id="pills-7" role="tabpanel" aria-labelledby="pills-tab-7">
                           <div class="my_blogs">
                             <div class="like_share">
-                              <span>
-                                <img src="img/icons/chatbubble.svg" alt="Like">
+                              <span data-bs-toggle="modal" data-bs-target="#rejectionReason">
+                                <img src="img/icons/chatbubble.svg" alt="chatbubble">
                               </span>
                               <span data-bs-toggle="modal" data-bs-target="#shareEvent">
-                                <img src="img/icons/share.svg" alt="Like">
+                                <img src="img/icons/share.svg" alt="share">
                               </span>
                               <span>
-                                <img src="img/icons/edit.svg" alt="Like">
+                                <img src="img/icons/edit.svg" alt="edit">
                               </span>
                               <span data-bs-toggle="modal" data-bs-target="#Delete">
-                                <img src="img/icons/trash.svg" alt="Share">
+                                <img src="img/icons/trash.svg" alt="trash">
                               </span>
                             </div>
                             <div class="blog_thumb">
@@ -718,21 +718,21 @@
                           </div>
                           <div class="my_blogs">
                             <div class="like_share">
-                              <span>
-                                <img src="img/icons/chatbubble.svg" alt="Like">
+                              <span data-bs-toggle="modal" data-bs-target="#rejectionReason">
+                                <img src="img/icons/chatbubble.svg" alt="chatbubble">
                               </span>
                               <span data-bs-toggle="modal" data-bs-target="#shareEvent">
-                                <img src="img/icons/share.svg" alt="Like">
+                                <img src="img/icons/share.svg" alt="share">
                               </span>
                               <span>
-                                <img src="img/icons/edit.svg" alt="Like">
+                                <img src="img/icons/edit.svg" alt="edit">
                               </span>
                               <span data-bs-toggle="modal" data-bs-target="#Delete">
-                                <img src="img/icons/trash.svg" alt="Share">
+                                <img src="img/icons/trash.svg" alt="trash">
                               </span>
                             </div>
                             <div class="blog_thumb">
-                              <img src="img/blog/blog-2.png" alt="Blog Thumbnail">
+                              <img src="img/blog/blog-2.png" alt="Blog-Thumbnail">
                             </div>
                             <div class="blog_dtls">
                               <ul class="bullet-list stats">
@@ -748,17 +748,17 @@
                           </div>
                           <div class="my_blogs">
                             <div class="like_share">
-                              <span>
-                                <img src="img/icons/chatbubble.svg" alt="Like">
+                              <span data-bs-toggle="modal" data-bs-target="#rejectionReason">
+                                <img src="img/icons/chatbubble.svg" alt="chatbubble">
                               </span>
                               <span data-bs-toggle="modal" data-bs-target="#shareEvent">
-                                <img src="img/icons/share.svg" alt="Like">
+                                <img src="img/icons/share.svg" alt="share">
                               </span>
                               <span>
-                                <img src="img/icons/edit.svg" alt="Like">
+                                <img src="img/icons/edit.svg" alt="edit">
                               </span>
                               <span data-bs-toggle="modal" data-bs-target="#Delete">
-                                <img src="img/icons/trash.svg" alt="Share">
+                                <img src="img/icons/trash.svg" alt="trash">
                               </span>
                             </div>
                             <div class="blog_thumb">
@@ -1457,6 +1457,24 @@
   </div>
 
 
+  <!-- Rejection Reason Modal -->
+  <div class="modal fade" id="rejectionReason" tabindex="-1" aria-labelledby="rejectionReasonLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content sach-modal-share">
+        <span class="modal-close-btn" data-bs-dismiss="modal">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.3428 10.3433L21.6565 21.657" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M10.3435 21.657L21.6572 10.3433" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+        <div class="sach-title indv">
+          <h4>Mental health:The problem of loneliness and social media's role..</h4>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cumque, tempora eius repellat perspiciatis fuga, numquam quo possimus quas, quod assumenda earum cum dolorem quia fugiat. Esse consequuntur explicabo tenetur?</p>
+      </div>
+    </div>
+  </div>
+
   <!-- Delete Modal -->
   <div class="modal fade sach-modal" id="Delete" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -1512,7 +1530,144 @@
     </div>
   </div>
 
+
+  <!-- Password Changed Modal -->
+  <div class="modal fade sach-modal" id="passwordChanged" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <span class="modal-close" data-bs-dismiss="modal">
+          <i class="bi bi-x"></i>
+        </span>
+
+        <div class="px-md-5 text-center mt-5">
+          <img src="img/icons/success-tick.svg" alt="Successfully">
+          <div class="modal-heading text-center my-4">
+            <h1>Password<br> Successfully Changed!</h1>
+            <span>Please login to your number or email account again</span>
+          </div>
+
+          <div class="my-3 text-center">
+            <a href="login.html" class="btn-sach bg-sach-dark justify-content-center w-100">
+              <span class="py-1">Login Now</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Change Mobile Number Modal -->
+  <div class="modal fade sach-modal sach-modal-2" id="changeNumber" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <span class="modal-close" data-bs-dismiss="modal">
+          <i class="bi bi-x"></i>
+        </span>
+
+        <div class="px-md-2">
+          <div class="modal-heading text-center mt-4">
+            <h1>Change Mobile Number</h1>
+            <span>Please enter the following details to process further </span>
+          </div>
+
+          <div class="row">
+            <div class="col-12 sach-form">
+              <label class="form-label">Current Mobile Number <small>*</small></label>
+              <input type="text" class="form-control" id="currentMobile" value="+91 9999009900">
+            </div>
+            <div class="col-12 sach-form">
+              <label class="form-label">Enter New Mobile Number <small>*</small></label>
+              <input type="text" class="form-control" id="newMobile" value="+91">
+            </div>
+          </div>
+
+          <div class="my-3 text-center">
+            <span class="d-block my-4 m-para">We will send an OTP to new mobile number for confirmation</span>
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#OTPforNumberChange" data-bs-dismiss="modal" class="btn-sach bg-sach-dark justify-content-center w-100">
+              <span class="py-1">Send OTP</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- OTP for Mobile Number Change Modal -->
+  <div class="modal fade sach-modal" id="OTPforNumberChange" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <span class="modal-close" data-bs-dismiss="modal">
+          <i class="bi bi-x"></i>
+        </span>
+
+        <div class="px-md-5 text-center">
+
+          <div class="modal-heading text-center my-4">
+            <h1>Verify Account</h1>
+            <span>We have sent you OTP to your register number xxxx99</span>
+          </div>
+
+          <div class="col-12 sach-form sach-form-OTP">
+            <input type="text" class="form-control" value="9" maxlength="1" id="OTP-char-1">
+            <input type="text" class="form-control" value="4" maxlength="1" id="OTP-char-2">
+            <input type="text" class="form-control" value="3" maxlength="1" id="OTP-char-3">
+            <input type="text" class="form-control" value="_" maxlength="1" id="OTP-char-4">
+          </div>
+          <div class="col-12 my-2 resendOTP d-flex justify-content-between">
+            <a href="#" class="text-sach">Resend OTP</a>
+            <span><img src="img/icons/clock.svg" alt="Clock"> Ends in <b class="text-sach">36</b> sec</span>
+          </div>
+          <div class="my-3 text-center">
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#numberChangedSuccess" data-bs-dismiss="modal" class="btn-sach bg-sach-dark justify-content-center w-100">
+              <span class="py-1">Change Number</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Mobile Number Changed Successfully Modal -->
+  <div class="modal fade sach-modal" id="numberChangedSuccess" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <span class="modal-close" data-bs-dismiss="modal">
+          <i class="bi bi-x"></i>
+        </span>
+
+        <div class="px-md-5 text-center mt-5">
+
+          <img src="img/icons/success-tick.svg" alt="Successfully">
+
+          <div class="modal-heading text-center my-4">
+            <h1>Mobile Number<br>Successfully Changed!</h1>
+            <span>Please login to your number or email account again</span>
+          </div>
+
+          <div class="my-3 text-center">
+            <a href="javascript:void(0);" class="btn-sach bg-sach-dark justify-content-center w-100" data-bs-dismiss="modal">
+              <span class="py-1">Continue</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/owlCarousel/js/owl.carousel.min.js"></script>
   <script src="vendor/aos/js/aos.min.js"></script>
   <script src="js/script.js"></script>
 </body>
