@@ -204,7 +204,7 @@
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6 text-center text-md-end ms-auto ms-auto">
-						<a href="javascript:void(0);" class="btn-sach btn-sach-linear mt-3 mt-md-0">
+						<a href="javascript:void(0);" data-bs-target="#previewBlog" data-bs-toggle="modal" class="btn-sach btn-sach-linear mt-3 mt-md-0">
 							<span>Preview</span>
 						</a>
 						<a href="javascript:void(0);" class="btn-sach mt-3 mt-md-0 ms-3" data-bs-toggle="modal" data-bs-target="#PublishBlog">
@@ -288,7 +288,7 @@
 	</div>
 
 
-	<!-- Assign Role Modal -->
+	<!-- Save & Publish Modal -->
 	<div class="modal fade sach-modal" id="PublishBlog" tabindex="-1" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -367,13 +367,126 @@
 						<a href="javascript:void(0);" class="btn-sach btn-sach-linear me-3" data-bs-dismiss="modal">
 							<span>Cancel</span>
 						</a>
-						<a href="javascript:void(0);" class="btn-sach bg-sach-dark me-3" data-bs-dismiss="modal">
+						<a href="javascript:void(0);" class="btn-sach bg-sach-dark me-3" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#previewBlog">
 							<span>Save & Preview</span>
 						</a>
 						<a href="javascript:void(0);" class="btn-sach btn-success" data-bs-dismiss="modal">
 							<span>Publish</span>
 						</a>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="previewBlog" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-fullscreen modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<a href="javascript:void(0);" class="btn-sach bg-sach-dark btn-circle prev-modal-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="#92929D" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M13.4142 11.9998L17.7072 7.70676C18.0982 7.31576 18.0982 6.68376 17.7072 6.29276C17.3162 5.90176 16.6842 5.90176 16.2933 6.29276L12.0002 10.5858L7.70725 6.29276C7.31625 5.90176 6.68425 5.90176 6.29325 6.29276C5.90225 6.68376 5.90225 7.31576 6.29325 7.70676L10.5862 11.9998L6.29325 16.2928C5.90225 16.6838 5.90225 17.3158 6.29325 17.7068C6.48825 17.9018 6.74425 17.9998 7.00025 17.9998C7.25625 17.9998 7.51225 17.9018 7.70725 17.7068L12.0002 13.4138L16.2933 17.7068C16.4882 17.9018 16.7443 17.9998 17.0002 17.9998C17.2562 17.9998 17.5122 17.9018 17.7072 17.7068C18.0982 17.3158 18.0982 16.6838 17.7072 16.2928L13.4142 11.9998Z"></path>
+						</svg>
+					</a>
+
+					<main class="blog-page">
+						<div class="container">
+							<div class="row">
+
+								<div class="col-md-12">
+									<ul class="blog-tags">
+										<li><span>Ageing</span></li>
+										<li><span>Stress</span></li>
+									</ul>
+								</div>
+
+								<div class="col-md-12">
+									<div class="blog-tile">The issue of short term sick pay</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class="blog-banner-wrp">
+										<img src="img/blog/blog-banner-2.png" alt="Blog-Banner">
+										<span>Type caption for image (optional)</span>
+									</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class="blog-info-data">
+										<ul class="blog-data">
+											<li>
+												<i>By</i>
+												<strong>Martin Govil</strong>
+											</li>
+											<li><b>14 Mar, 2022</b></li>
+											<li>
+												<img src="img/icons/play-btn-2.svg" alt="play-bnt">
+												<span>10:09</span>
+											</li>
+										</ul>
+										<div class="blog-social">
+											<a href="#"><i class="bi bi-facebook"></i></a>
+											<a href="#"><i class="bi bi-instagram"></i></a>
+											<a href="#"><i class="bi bi-linkedin"></i></a>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="tableOfCont">
+										<div class="h1">Table of Contents:</div>
+										<ul>
+											<li><a href="#sub-ttl-1" class="active">Overview</a></li>
+											<li><a href="#sub-ttl-2">Fun facts about Sprout Social</a></li>
+											<li><a href="#sub-ttl-3">Which Will Save Me Time and Make My Job Easier?</a></li>
+											<li><a href="#sub-ttl-4">Which Tracks Performance and Social Media ROI the Best?</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-8">
+									<p class="b-para">With so many different options available, choosing which social media management platform to invest in is a minefield.</p>
+									<p class="b-para">But the long and short of it is, whichever social media management platform you choose, you need it to have features that will:</p>
+									<ul class="b-list">
+										<li>Save you time and make your job easier</li>
+										<li>Help you track performance, make improvements, and <strong>prove social media ROI</strong></li>
+										<li>Make it easy to use daily</li>
+										<li>Provide you with quality help and support whenever you need it</li>
+									</ul>
+									<p class="b-para">I’ve spent the last month trawling through G2 reviews and digging into the Agorapulse vs Sprout Social social media management tools to see which one does the above the better.</p>
+									<p class="b-para">This is what I found.</p>
+
+									<div class="sub-ttl" id="sub-ttl-1">Overview</div>
+									<p class="b-para">Everyone knows that the higher you rank on search engines like Google, the more traffic and interest your law firm will see. From here.</p>
+									<div class="blog-img">
+										<img src="img/blog/blog-banner-2.png" alt="Blog-Banner">
+										<span>Type caption for image (optional)</span>
+									</div>
+
+									<div class="sub-ttl" id="sub-ttl-2">Fun facts about Sprout Social</div>
+									<p class="b-para">Everyone knows that the higher you rank on search engines like Google, the more traffic and interest your law firm will see. From here.</p>
+									<p class="b-para">Are your clients embarrassed to leave Google reviews because of the fact that their cases involve sensitive and maybe private issues? </p>
+									<p class="b-para">As a result, do you find it really hard to get reviews, because people just don’t want to leave them? Well, in this video I’m going to show you how you can actually still get lots and lots of Google reviews even if your clients are too embarrassed to leave them.</p>
+
+									<div class="sub-ttl" id="sub-ttl-3">Which Will Save Me Time and Make My Job Easier?</div>
+									<p class="b-para">To save you time and to make your job easier, you need a social media management tool that has a core set of features that take care of the daily grind: those manual, time-consuming, and mundane tasks. Tasks like creating and posting content on different networks, replying to messages or comments from across your various platforms, and sending work for internal or external approval, to name a few.</p>
+									<p class="b-para">You’re looking for a social media management tool that has a top-notch set of publishing, inbox, and approval-workflow features.</p>
+									<p class="b-para">So, how do Agorapulse and Sprout Social stack up in regard to those types of features?</p>
+									<div class="blog-img">
+										<img src="img/blog/blog-banner-2.png" alt="Blog-Banner">
+										<span>Type caption for image (optional)</span>
+									</div>
+
+									<div class="sub-ttl" id="sub-ttl-4">Which Tracks Performance and Social Media ROI the Best?</div>
+									<p class="b-para">To save you time and to make your job easier, you need a social media management tool that has a core set of features that take care of the daily grind: those manual, time-consuming, and mundane tasks. Tasks like creating and posting content on different networks, replying to messages or comments from across your various platforms, and sending work for internal or external approval, to name a few.</p>
+									<p class="b-para">You’re looking for a social media management tool that has a top-notch set of publishing, inbox, and approval-workflow features.</p>
+									<p class="b-para">So, how do Agorapulse and Sprout Social stack up in regard to those types of features?</p>
+								</div>
+
+							</div>
+						</div>
+					</main>
+
 				</div>
 			</div>
 		</div>
