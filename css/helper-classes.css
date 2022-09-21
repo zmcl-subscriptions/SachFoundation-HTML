@@ -57,7 +57,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background: #dadada
+    background: var(--border-color);
 }
 
 hr {
@@ -130,6 +130,18 @@ hr {
 
 .bg-sach-dark-2 {
     background-color: var(--theme-dark-2) !important;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.btn-sach.bg-transparent {
+    color: var(--theme-dark-2) !important;
+}
+
+.btn-sach.bg-transparent:hover {
+    box-shadow: none !important;
 }
 
 .light-bg {

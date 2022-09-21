@@ -265,7 +265,7 @@
         <span>1</span>
       </div>
       <div class="LC-divider"></div>
-      <div class="like-comment">
+      <div class="like-comment" onclick="showComment();">
         <img src="img/icons/comment.svg" alt="Comment">
         <span>Comments</span>
       </div>
@@ -523,18 +523,207 @@
 
 
   <section class="comment-section">
-    <div class="comment-head">
-      <span class="h2">15 Comments</span>
-      <select class="form-control">
-        <option>Most Recent</option>
-        <option>Newest</option>
-        <option>Only Your Comments</option>
-      </select>
+
+    <div class="close-comment" onclick="hideComment();">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4142 11.9998L17.7072 7.70676C18.0982 7.31576 18.0982 6.68376 17.7072 6.29276C17.3162 5.90176 16.6842 5.90176 16.2933 6.29276L12.0002 10.5858L7.70725 6.29276C7.31625 5.90176 6.68425 5.90176 6.29325 6.29276C5.90225 6.68376 5.90225 7.31576 6.29325 7.70676L10.5862 11.9998L6.29325 16.2928C5.90225 16.6838 5.90225 17.3158 6.29325 17.7068C6.48825 17.9018 6.74425 17.9998 7.00025 17.9998C7.25625 17.9998 7.51225 17.9018 7.70725 17.7068L12.0002 13.4138L16.2933 17.7068C16.4882 17.9018 16.7443 17.9998 17.0002 17.9998C17.2562 17.9998 17.5122 17.9018 17.7072 17.7068C18.0982 17.3158 18.0982 16.6838 17.7072 16.2928L13.4142 11.9998Z" />
+      </svg>
     </div>
 
-    <div class="direct-comment">
+    <div class="cmnt-wrp">
+      <div class="comment-head">
+        <span class="h2">15 Comments</span>
+        <select class="form-control">
+          <option>Most Recent</option>
+          <option>Newest</option>
+          <option>Only Your Comments</option>
+        </select>
+      </div>
 
+      <div class="direct-comment">
+        <div class="user-cmnt">
+          <img src="img/user-image-2.png" alt="user-img">
+          <div class="user-data">
+            <b>Harpreet Kaur</b>
+            <span>1 day ago</span>
+          </div>
+        </div>
+        <div class="comment-txt">It's not too difficult to understand if you know where in the evolution process you are in the 3rd-4th dimension.</div>
+        <div class="like_cmnt">
+          <div class="L_n_R">
+            <div class="lnr_elm">
+              <img src="img/icons/like.svg" alt="like">
+              <span>5</span>
+            </div>
+            <div class="lnr_elm">
+              <img src="img/icons/chatbubble.svg" alt="comment">
+              <span>1 reply</span>
+            </div>
+          </div>
+          <div class="reply_cmnt">Reply</div>
+        </div>
+
+        <div class="inner-comment">
+          <div class="direct-reply">
+            <div class="user-cmnt">
+              <img src="img/user-image-2.png" alt="user-img">
+              <div class="user-data">
+                <b>Harpreet Kaur</b>
+              </div>
+            </div>
+            <textarea rows="3" placeholder="What is your thought?"></textarea>
+            <div class="cmntBtnWrp">
+              <a href="#" class="btn btn-sach bg-transparent">Cancel</a>
+              <a href="#" class="btn btn-sach bg-sach-dark">Send</a>
+            </div>
+          </div>
+          <div class="direct-comment">
+            <div class="user-cmnt">
+              <img src="img/user-image-2.png" alt="user-img">
+              <div class="user-data">
+                <b>Harpreet Kaur</b>
+                <span>1 day ago</span>
+              </div>
+            </div>
+            <div class="comment-txt">It's not too difficult to understand if you know where in the evolution process you are in the 3rd-4th dimension.</div>
+            <div class="like_cmnt">
+              <div class="L_n_R">
+                <div class="lnr_elm">
+                  <img src="img/icons/like.svg" alt="like">
+                  <span>5</span>
+                </div>
+                <div class="lnr_elm">
+                  <img src="img/icons/chatbubble.svg" alt="comment">
+                  <span>1 reply</span>
+                </div>
+              </div>
+              <div class="reply_cmnt">Reply</div>
+            </div>
+          </div>
+          <div class="direct-comment">
+            <div class="user-cmnt">
+              <img src="img/user-image-2.png" alt="user-img">
+              <div class="user-data">
+                <b>Harpreet Kaur</b>
+                <span>1 day ago</span>
+              </div>
+            </div>
+            <div class="comment-txt">you are in the 3rd-4th dimension...👍🏻👍🏻</div>
+            <div class="like_cmnt">
+              <div class="L_n_R">
+                <div class="lnr_elm">
+                  <img src="img/icons/like.svg" alt="like">
+                  <span>5</span>
+                </div>
+                <div class="lnr_elm">
+                  <img src="img/icons/chatbubble.svg" alt="comment">
+                  <span>1 reply</span>
+                </div>
+              </div>
+              <div class="reply_cmnt">Reply</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="direct-comment">
+        <div class="user-cmnt">
+          <img src="img/user-image-2.png" alt="user-img">
+          <div class="user-data">
+            <b>Harpreet Kaur</b>
+            <span>1 day ago</span>
+          </div>
+        </div>
+        <div class="comment-txt">From where all this coming from?</div>
+        <div class="like_cmnt">
+          <div class="L_n_R">
+            <div class="lnr_elm">
+              <img src="img/icons/like.svg" alt="like">
+              <span>5</span>
+            </div>
+            <div class="lnr_elm">
+              <img src="img/icons/chatbubble.svg" alt="comment">
+              <span>1 reply</span>
+            </div>
+          </div>
+          <div class="reply_cmnt">Reply</div>
+        </div>
+      </div>
+
+      <div class="direct-comment">
+        <div class="user-cmnt">
+          <img src="img/user-image-2.png" alt="user-img">
+          <div class="user-data">
+            <b>Harpreet Kaur</b>
+            <span>1 day ago</span>
+          </div>
+        </div>
+        <div class="comment-txt">Don't you have an imagination? let's dig into the word and meaning of imagination.</div>
+        <div class="like_cmnt">
+          <div class="L_n_R">
+            <div class="lnr_elm">
+              <img src="img/icons/like.svg" alt="like">
+              <span>5</span>
+            </div>
+            <div class="lnr_elm">
+              <img src="img/icons/chatbubble.svg" alt="comment">
+              <span>1 reply</span>
+            </div>
+          </div>
+          <div class="reply_cmnt">Reply</div>
+        </div>
+      </div>
+
+      <div class="direct-comment">
+        <div class="user-cmnt">
+          <img src="img/user-image-2.png" alt="user-img">
+          <div class="user-data">
+            <b>Harpreet Kaur</b>
+            <span>1 day ago</span>
+          </div>
+        </div>
+        <div class="comment-txt">It's not too difficult to understand if you know where in the evolution process you are in the 3rd-4th dimension.</div>
+        <div class="like_cmnt">
+          <div class="L_n_R">
+            <div class="lnr_elm">
+              <img src="img/icons/like.svg" alt="like">
+              <span>5</span>
+            </div>
+            <div class="lnr_elm">
+              <img src="img/icons/chatbubble.svg" alt="comment">
+              <span>1 reply</span>
+            </div>
+          </div>
+          <div class="reply_cmnt">Reply</div>
+        </div>
+      </div>
+
+      <div class="direct-comment">
+        <div class="user-cmnt">
+          <img src="img/user-image-2.png" alt="user-img">
+          <div class="user-data">
+            <b>Harpreet Kaur</b>
+            <span>1 day ago</span>
+          </div>
+        </div>
+        <div class="comment-txt">El programa está disponible en español. Para verlo.</div>
+        <div class="like_cmnt">
+          <div class="L_n_R">
+            <div class="lnr_elm">
+              <img src="img/icons/like.svg" alt="like">
+              <span>5</span>
+            </div>
+            <div class="lnr_elm">
+              <img src="img/icons/chatbubble.svg" alt="comment">
+              <span>1 reply</span>
+            </div>
+          </div>
+          <div class="reply_cmnt">Reply</div>
+        </div>
+      </div>
     </div>
+
   </section>
 
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -542,6 +731,15 @@
   <script src="vendor/owlCarousel/js/owl.carousel.min.js"></script>
   <script src="vendor/aos/js/aos.min.js"></script>
   <script src="js/script.js"></script>
+  <script type="text/javascript">
+    const commntSection = document.querySelector('.comment-section');
+    function showComment() {
+      commntSection.classList.add('slide-show');
+    }
+    function hideComment() {
+      commntSection.classList.remove('slide-show');
+    }
+  </script>
 </body>
 
 </html>
