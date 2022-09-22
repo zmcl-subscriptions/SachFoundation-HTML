@@ -1549,6 +1549,7 @@ ul.b-list li::before {
     -webkit-box-shadow: 3px 45px 61px -46px rgba(238, 108, 77, 0.48);
     -moz-box-shadow: 3px 45px 61px -46px rgba(238, 108, 77, 0.48);
     transform: scale(1.02);
+    color: currentColor;
 }
 
 .category-video .video-thumb {
@@ -5937,6 +5938,96 @@ ul.sach-pills li span:hover {
 }
 
 /* ========== Comment Section End ========== */
+/* ========== Testimonials Section Start ========== */
+.testimonial-hero-section {
+    position: relative;
+    height: calc(100vh - 96px);
+    border-radius: 32px;
+    background-color: var(--theme-orange-08);
+    padding: 0px 100px;
+    margin: 0px 20px;
+    overflow: hidden;
+}
+
+.testimonial-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url(../img/testimonials.png) no-repeat;
+    background-position: right;
+}
+
+.testimonial-hero-section .row {
+    height: 100%;
+    align-items: center;
+}
+
+.testimonial-hero-section .row .h1 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    color: var(--theme-dark);
+    margin: 0px;
+}
+
+.testimonial-hero-section .row p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--theme-dark-2);
+    margin: 20px 0px 0px;
+}
+
+.testimonial-cards {
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    margin-bottom: 24px;
+    text-align: center;
+    padding: 32px;
+}
+
+.testimonial-cards>img {
+    height: 85px;
+    width: 85px;
+    margin-bottom: 25px;
+}
+
+.testimonial-cards .tstmnl-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--theme-dark);
+}
+
+.testimonial-cards .tstmnl-dsgn {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--theme-dark);
+    opacity: 0.5;
+}
+
+.testimonial-cards .tstmnl-ttl {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    color: var(--theme-dark);
+    margin: 30px 0px 20px;
+}
+
+.testimonial-cards .tstmnl-para {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--theme-dark);
+    opacity: 0.5;
+    text-align: center;
+    margin: 0px 25px;
+}
+
+/* ========== Testimonials Section End ========== */
 
 
 /* ################################################# */
