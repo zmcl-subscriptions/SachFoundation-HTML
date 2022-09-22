@@ -7,7 +7,7 @@ html {
 }
 
 /* ========== About Us (Overview) Start ========== */
-body.full-body {
+body:has(.header-transparent) {
     margin-top: 0px;
 }
 
@@ -5714,7 +5714,7 @@ ul.sach-pills li span:hover {
 .cmnt-wrp {
     overflow-y: auto;
     height: 100%;
-    padding: 30px 20px 10px;
+    padding: 30px 20px 80px;
 }
 
 .cmnt-wrp::-webkit-scrollbar {
@@ -5907,6 +5907,33 @@ ul.sach-pills li span:hover {
     font-size: 12px;
     line-height: 20px;
     color: var(--theme-dark-2);
+}
+
+.write-cmnt-wrp {
+    position: absolute;
+    bottom: 0px;
+    left: 25px;
+    right: 25px;
+    background: linear-gradient(180deg, rgb(255 255 255) 80%, rgb(255 255 255 / 75%) 100%);
+    padding: 10px 0px 15px;
+}
+
+.comment-group {
+    position: relative;
+}
+
+.comment-group .write-comment {
+    border: 1px solid var(--border-color);
+    padding: 16px 80px 16px 16px;
+    box-shadow: 0px 0px 23px rgba(32, 20, 41, 0.08);
+    border-radius: 8px;
+}
+
+.comment-group .btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px 14px;
 }
 
 /* ========== Comment Section End ========== */

@@ -36,6 +36,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
+  // window.addEventListener("scroll", function () {
+  //   console.log(window.pageYOffset);
+  // });
+
   // ========== Easy on scroll event listener ==========
   const onscroll = (el, listener) => {
     el.addEventListener("scroll", listener);
