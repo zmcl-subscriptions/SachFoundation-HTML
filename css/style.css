@@ -3015,10 +3015,15 @@ ul.video-share-like li svg {
     height: auto;
 }
 
+.owl-carousel .owl-stage {
+    display: flex;
+}
 
 .resource-card {
     border-radius: 20px;
     overflow: hidden;
+    height: 100%;
+    margin: 0px 4px;
 }
 
 .resource-card .card-body .card-title {
@@ -4011,6 +4016,10 @@ ul.video-share-like li svg {
 /* ========== Sectoral Focus End ========== */
 
 /* ========== Subhash Chandra Foundation - Inner Page Start ========== */
+.foundation-title {
+    width: 80%;
+}
+
 .foundation-title h1 {
     font-weight: 800;
     font-size: 56px;
@@ -4032,9 +4041,67 @@ ul.video-share-like li svg {
     border-radius: 48px;
     display: flex;
     align-items: center;
+    margin-top: 35px;
+    margin-bottom: 180px;
 }
 
-/* .sach-foundation-inner {} */
+.sach-foundation-heroImg {
+    position: absolute;
+    top: 20px;
+}
+
+.sach-foundation-heroImg .heroImg-inner {
+    position: relative;
+    isolation: isolate;
+}
+
+.sach-foundation-heroImg .heroImg-inner::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    right: 20px;
+    height: 50%;
+    background: #DFD6E5;
+    opacity: 0.2;
+    border-radius: 16px;
+    transform: translateY(-15px);
+    z-index: -1;
+}
+
+.sach-foundation-heroImg .heroImg-inner::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    right: 40px;
+    height: 50%;
+    background: #DFD6E5;
+    opacity: 0.1;
+    border-radius: 16px;
+    transform: translateY(-35px);
+    z-index: -1;
+}
+
+.sach-foundation-heroImg .heroImg-inner>img {}
+
+.sach-foundation-heroImg .heroImg-inner .heroImg-inner-details {
+    position: absolute;
+    bottom: 10%;
+    left: -30%;
+    padding: 12px 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 23px rgb(0 0 0 / 10%);
+}
+
+.sach-foundation-heroImg .heroImg-inner .heroImg-inner-details span {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    color: #201429;
+}
+
 .sach-nav-tabs .nav {
     margin-right: 80px;
 }
@@ -5982,9 +6049,9 @@ ul.sach-pills li span:hover {
 .testimonial-cards {
     border: 1px solid var(--border-color);
     border-radius: 20px;
-    margin-bottom: 24px;
     text-align: center;
     padding: 32px;
+    margin: 16px 4px;
 }
 
 .testimonial-cards>img {

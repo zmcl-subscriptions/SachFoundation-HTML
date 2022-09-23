@@ -360,9 +360,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const resources = $(".resources");
   resources.owlCarousel({
-    margin: 40,
+    margin: 15,
     loop: true,
-    autoplay: true,
+    autoplay: false,
     nav: true,
     center: false,
     navText: [

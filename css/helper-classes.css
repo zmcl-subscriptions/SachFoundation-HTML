@@ -175,6 +175,72 @@ hr {
 
 /* ========== Colors & Background End ========== */
 
+/* ========== Pagination Start ========== */
+.sach-pagination-round {}
+
+.sach-pagination-round ul {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.sach-pagination-round ul li {}
+
+.sach-pagination-round ul li:is(:first-child, :last-child) {
+    margin-inline: 8px;
+}
+
+.sach-pagination-round ul li:is(:first-child, :last-child) :is(a, a:focus) {
+    border-color: var(--theme-dark-2);
+}
+
+.sach-pagination-round ul li:is(:first-child, :last-child) a:hover {
+    background-color: var(--theme-orange) !important;
+    border-color: var(--theme-orange);
+}
+
+.sach-pagination-round ul li:is(:first-child, :last-child) a:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.sach-pagination-round ul li a {
+    height: 32px;
+    width: 32px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff !important;
+    border-radius: 32px !important;
+    border-color: var(--border-color);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    transition: 400ms;
+    color: var(--theme-dark-2);
+}
+
+.sach-pagination-round ul li a:hover {
+    color: var(--theme-orange);
+    border-color: var(--theme-orange);
+    background: #fff;
+}
+
+.sach-pagination-round ul li a:focus {
+    box-shadow: 0 0 0 0.25rem var(--theme-orange-08);
+    color: var(--theme-orange);
+}
+
+.sach-pagination-round ul li a.active {
+    background-color: var(--theme-orange) !important;
+    border-color: var(--theme-orange);
+    color: #fff;
+}
+
+/* ========== Pagination End ========== */
+
 /* ========== breadcrumb Start ========== */
 .sach-breadcrumb {
     --bs-breadcrumb-divider: url("data:image/svg+xml,%0A%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.999841 7.33342C0.829175 7.33342 0.658508 7.26808 0.528508 7.13808C0.267841 6.87742 0.267841 6.45608 0.528508 6.19542L2.73184 3.99208L0.611841 1.79675C0.356508 1.53142 0.363841 1.10942 0.628508 0.854085C0.893841 0.598751 1.31584 0.606085 1.57117 0.870085L4.14584 3.53675C4.39851 3.79875 4.39518 4.21408 4.13784 4.47142L1.47117 7.13808C1.34117 7.26808 1.17051 7.33342 0.999841 7.33342' fill='%234D4354'/%3E%3C/svg%3E%0A");
