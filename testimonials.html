@@ -197,7 +197,7 @@
 					<div class="col-lg-4 col-md-4">
 						<h2 class="page-title">Manage Testimonials</h2>
 					</div>
-					<div class="col-lg-6 col-md-6 text-md-end text-center ms-auto">
+					<div class="col-lg-8 col-md-8 text-md-end text-center">
 						<div class="input-group sach-input-group w-50 me-3">
 							<span class="input-group-text" id="basic-addon1">
 								<svg width="20" height="20" viewBox="0 0 20 20" fill="#4D4354" xmlns="http://www.w3.org/2000/svg">
@@ -206,12 +206,18 @@
 							</span>
 							<input type="text" class="form-control" placeholder="Search by reviewer or email">
 						</div>
-						<a href="img/sach.svg" download class="btn-sach bg-sach-dark mt-3 mt-md-0">
+						<a href="img/sach.svg" download class="btn-sach btn-sach-linear me-3 mt-3 	mt-md-0">
 							<svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="#4D4354" xmlns="http://www.w3.org/2000/svg">
 								<path d="M6.81172 8.09737C6.4567 7.74235 6.4567 7.16674 6.81172 6.81172L11.3572 2.26627C11.7122 1.91124 12.2878 1.91124 12.6428 2.26627L17.1883 6.81172C17.5433 7.16674 17.5433 7.74235 17.1883 8.09737C16.8333 8.45239 16.2577 8.45239 15.9026 8.09737L12.9091 5.10383L12.9091 15.6364C12.9091 16.1384 12.5021 16.5455 12 16.5455C11.4979 16.5455 11.0909 16.1384 11.0909 15.6364L11.0909 5.10383L8.09737 8.09737C7.74235 8.45239 7.16674 8.45239 6.81172 8.09737Z" />
 								<path d="M2.90909 14.7273C3.41117 14.7273 3.81818 15.1343 3.81818 15.6364V19.2727C3.81818 19.7748 4.2252 20.1818 4.72727 20.1818H19.2727C19.7748 20.1818 20.1818 19.7748 20.1818 19.2727V15.6364C20.1818 15.1343 20.5888 14.7273 21.0909 14.7273C21.593 14.7273 22 15.1343 22 15.6364V19.2727C22 20.779 20.779 22 19.2727 22H4.72727C3.22104 22 2 20.779 2 19.2727V15.6364C2 15.1343 2.40701 14.7273 2.90909 14.7273Z" />
 							</svg>
 							<span>Export CSV</span>
+						</a>
+						<a href="javascript:void(0);" class="btn-sach bg-sach-dark mt-3 mt-md-0" data-bs-target="#WriteTestimonial" data-bs-toggle="modal">
+							<svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M19 11H13V5C13 4.447 12.552 4 12 4C11.448 4 11 4.447 11 5V11H5C4.448 11 4 11.447 4 12C4 12.553 4.448 13 5 13H11V19C11 19.553 11.448 20 12 20C12.552 20 13 19.553 13 19V13H19C19.552 13 20 12.553 20 12C20 11.447 19.552 11 19 11Z"></path>
+							</svg>
+							<span>Write Testimonial</span>
 						</a>
 					</div>
 				</div>
@@ -284,7 +290,7 @@
 															</div>
 														</div>
 													</td>
-													<td><span class="font-w400">I bought this hat for my boyfriend, but then i found out he cheated on me so I kept it and I love it!! I wear it all the time and there is no problem with the fit even though its a mens" hat. <a href="javascript:void(0);" class="fw-bold">Read more</a></span></tdc>
+													<td><span class="font-w400 ws-normal">I bought this hat for my boyfriend, but then i found out he cheated on me so I kept it and I love it!! I wear it all the time and there is no problem with the fit even though its a mens" hat. <a href="javascript:void(0);" class="fw-bold">Read more</a></span></tdc>
 													<td class="nowrap">10 Apr, 2022 , 3:14 PM</td>
 													<td>
 														<a href="javascript:void(0);" class="status-btn _active">Published</a>
@@ -300,7 +306,8 @@
 															</button>
 															<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="addCategroyBtn">
 																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#testimonialReply"><img src="img/icons/reply.svg" alt="icon"><span>Reply</span></a></li>
-																<li><a class="dropdown-item" href="javascript:void(0);"><img src="img/icons/check.svg" alt="icon"><span>Publish</span></a></li>
+																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#publishTestimonial"><img src="img/icons/check.svg" alt="icon"><span>Publish</span></a></li>
+																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#declineTestimonial"><img src="img/icons/close-2.svg" alt="icon"><span>Cancel</span></a></li>
 																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#reviewUser"><img src="img/icons/trash.svg" alt="icon"><span>Delete</span></a></li>
 															</ul>
 														</div>
@@ -325,7 +332,7 @@
 															</div>
 														</div>
 													</td>
-													<td><span class="font-w400">As good as the heat Rdy T-shirt but without the sleeves. Love the stripes on the back.</span></td>
+													<td><span class="font-w400 ws-normal">As good as the heat Rdy T-shirt but without the sleeves. Love the stripes on the back.</span></td>
 													<td class="nowrap">10 Apr, 2022 , 3:14 PM</td>
 													<td>
 														<a href="javascript:void(0);" class="status-btn _pending">Pending</a>
@@ -341,7 +348,8 @@
 															</button>
 															<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
 																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#testimonialReply"><img src="img/icons/reply.svg" alt="icon"><span>Reply</span></a></li>
-																<li><a class="dropdown-item" href="javascript:void(0);"><img src="img/icons/check.svg" alt="icon"><span>Publish</span></a></li>
+																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#publishTestimonial"><img src="img/icons/check.svg" alt="icon"><span>Publish</span></a></li>
+																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#declineTestimonial"><img src="img/icons/close-2.svg" alt="icon"><span>Cancel</span></a></li>
 																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#reviewUser"><img src="img/icons/trash.svg" alt="icon"><span>Delete</span></a></li>
 															</ul>
 														</div>
@@ -366,7 +374,7 @@
 															</div>
 														</div>
 													</td>
-													<td><span class="font-w400">Don't let this merchandise get away! It's a must buy and you will look good in it while working out.</span></td>
+													<td><span class="font-w400 ws-normal">Don't let this merchandise get away! It's a must buy and you will look good in it while working out.</span></td>
 													<td class="nowrap">10 Apr, 2022 , 3:14 PM</td>
 													<td>
 														<a href="javascript:void(0);" class="status-btn _active">Published</a>
@@ -382,7 +390,8 @@
 															</button>
 															<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
 																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#testimonialReply"><img src="img/icons/reply.svg" alt="icon"><span>Reply</span></a></li>
-																<li><a class="dropdown-item" href="javascript:void(0);"><img src="img/icons/check.svg" alt="icon"><span>Publish</span></a></li>
+																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#publishTestimonial"><img src="img/icons/check.svg" alt="icon"><span>Publish</span></a></li>
+																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#declineTestimonial"><img src="img/icons/close-2.svg" alt="icon"><span>Cancel</span></a></li>
 																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#reviewUser"><img src="img/icons/trash.svg" alt="icon"><span>Delete</span></a></li>
 															</ul>
 														</div>
@@ -407,7 +416,7 @@
 															</div>
 														</div>
 													</td>
-													<td><span class="font-w400">A really well built shoe. It looks great and wears just as well. A great staple in ball caps.</span></td>
+													<td><span class="font-w400 ws-normal">A really well built shoe. It looks great and wears just as well. A great staple in ball caps.</span></td>
 													<td class="nowrap">10 Apr, 2022 , 3:14 PM</td>
 													<td>
 														<a href="javascript:void(0);" class="status-btn _pending">Pending</a>
@@ -423,7 +432,8 @@
 															</button>
 															<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
 																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#testimonialReply"><img src="img/icons/reply.svg" alt="icon"><span>Reply</span></a></li>
-																<li><a class="dropdown-item" href="javascript:void(0);"><img src="img/icons/check.svg" alt="icon"><span>Publish</span></a></li>
+																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#publishTestimonial"><img src="img/icons/check.svg" alt="icon"><span>Publish</span></a></li>
+																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#declineTestimonial"><img src="img/icons/close-2.svg" alt="icon"><span>Cancel</span></a></li>
 																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#reviewUser"><img src="img/icons/trash.svg" alt="icon"><span>Delete</span></a></li>
 															</ul>
 														</div>
@@ -464,7 +474,8 @@
 															</button>
 															<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
 																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#testimonialReply"><img src="img/icons/reply.svg" alt="icon"><span>Reply</span></a></li>
-																<li><a class="dropdown-item" href="javascript:void(0);"><img src="img/icons/check.svg" alt="icon"><span>Publish</span></a></li>
+																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#publishTestimonial"><img src="img/icons/check.svg" alt="icon"><span>Publish</span></a></li>
+																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#declineTestimonial"><img src="img/icons/close-2.svg" alt="icon"><span>Cancel</span></a></li>
 																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#reviewUser"><img src="img/icons/trash.svg" alt="icon"><span>Delete</span></a></li>
 															</ul>
 														</div>
@@ -489,7 +500,7 @@
 															</div>
 														</div>
 													</td>
-													<td><span class="font-w400">Great firm. If I was ever in need and hurt badly George is who I would turn to.</span></td>
+													<td><span class="font-w400 ws-normal">Great firm. If I was ever in need and hurt badly George is who I would turn to.</span></td>
 													<td class="nowrap">10 Apr, 2022 , 3:14 PM</td>
 													<td>
 														<a href="javascript:void(0);" class="status-btn _pending">Pending</a>
@@ -505,7 +516,8 @@
 															</button>
 															<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
 																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#testimonialReply"><img src="img/icons/reply.svg" alt="icon"><span>Reply</span></a></li>
-																<li><a class="dropdown-item" href="javascript:void(0);"><img src="img/icons/check.svg" alt="icon"><span>Publish</span></a></li>
+																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#publishTestimonial"><img src="img/icons/check.svg" alt="icon"><span>Publish</span></a></li>
+																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#declineTestimonial"><img src="img/icons/close-2.svg" alt="icon"><span>Cancel</span></a></li>
 																<li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#reviewUser"><img src="img/icons/trash.svg" alt="icon"><span>Delete</span></a></li>
 															</ul>
 														</div>
@@ -744,6 +756,129 @@
 		</div>
 	</div>
 
+
+	<!-- Approve Testimonial Modal -->
+	<div class="modal fade sach-modal" id="publishTestimonial" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<span class="modal-close" data-bs-dismiss="modal">
+					<i class="bi bi-x"></i>
+				</span>
+				<div class="row">
+					<div class="col-12">
+						<div class="sub-page-title flx-ttl py-2">
+							<div class="head-ico success">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M8.21965 14.9999C7.98965 14.9999 7.76965 14.9049 7.61215 14.7374L3.55965 10.4216C3.24381 10.0866 3.26131 9.55906 3.59631 9.24406C3.93215 8.92906 4.45965 8.94572 4.77381 9.28072L8.21131 12.9399L15.218 5.27156C15.5296 4.93072 16.0563 4.90822 16.3963 5.21822C16.7355 5.52822 16.7588 6.05572 16.4488 6.39489L8.83465 14.7282C8.67881 14.8999 8.45715 14.9982 8.22548 14.9999H8.21965Z" />
+								</svg>
+							</div>
+							<div class="head-data">
+								<h2>Approve</h2>
+								<span>Please enter the following procees.</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 sach-form">
+						<label class="form-label">Reason why you approve?<small>*</small></label>
+						<textarea rows="2" class="form-control h-auto" placeholder="Enter here..."></textarea>
+					</div>
+					<div class="col-12 text-end mt-4">
+						<a href="javascript:void(0);" class="btn-sach btn-sach-linear me-3" data-bs-dismiss="modal">
+							<span>Cancel</span>
+						</a>
+						<a href="blogManagement.html" class="btn-sach bg-sach-dark" data-bs-dismiss="modal">
+							<span>Submit</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Decline Testimonial Modal -->
+	<div class="modal fade sach-modal" id="declineTestimonial" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<span class="modal-close" data-bs-dismiss="modal">
+					<i class="bi bi-x"></i>
+				</span>
+				<div class="row">
+					<div class="col-12">
+						<div class="sub-page-title flx-ttl py-2">
+							<div class="head-ico danger">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M13.4142 11.9998L17.7072 7.70676C18.0982 7.31576 18.0982 6.68376 17.7072 6.29276C17.3162 5.90176 16.6842 5.90176 16.2933 6.29276L12.0002 10.5858L7.70725 6.29276C7.31625 5.90176 6.68425 5.90176 6.29325 6.29276C5.90225 6.68376 5.90225 7.31576 6.29325 7.70676L10.5862 11.9998L6.29325 16.2928C5.90225 16.6838 5.90225 17.3158 6.29325 17.7068C6.48825 17.9018 6.74425 17.9998 7.00025 17.9998C7.25625 17.9998 7.51225 17.9018 7.70725 17.7068L12.0002 13.4138L16.2933 17.7068C16.4882 17.9018 16.7443 17.9998 17.0002 17.9998C17.2562 17.9998 17.5122 17.9018 17.7072 17.7068C18.0982 17.3158 18.0982 16.6838 17.7072 16.2928L13.4142 11.9998Z" />
+								</svg>
+							</div>
+							<div class="head-data">
+								<h2>Cancel</h2>
+								<span>Please enter the following procees.</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 sach-form">
+						<label class="form-label">Reason why you decline?<small>*</small></label>
+						<textarea rows="2" class="form-control h-auto" placeholder="Enter here..."></textarea>
+					</div>
+					<div class="col-12 text-end mt-4">
+						<a href="javascript:void(0);" class="btn-sach btn-sach-linear me-3" data-bs-dismiss="modal">
+							<span>Cancel</span>
+						</a>
+						<a href="blogManagement.html" class="btn-sach bg-sach-dark" data-bs-dismiss="modal">
+							<span>Submit</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Write Testimonial Modal -->
+	<div class="modal fade sach-modal" id="WriteTestimonial" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+
+				<span class="modal-close" data-bs-dismiss="modal">
+					<i class="bi bi-x"></i>
+				</span>
+
+				<div class="row">
+					<div class="col-12">
+						<div class="sub-page-title py-3">
+							<h2>Write Testimonial</h2>
+						</div>
+					</div>
+
+					<div class="col-12 sach-form">
+						<label class="form-label">Video Title <small>*</small></label>
+						<select class="form-control">
+							<option>English</option>
+							<option>Hindi</option>
+							<option>Telugu</option>
+							<option>Tamil</option>
+						</select>
+					</div>
+
+					<div class="col-12 sach-form">
+						<label class="form-label">Write Review</label>
+						<textarea rows="2" class="form-control h-auto"></textarea>
+					</div>
+
+
+					<div class="col-12 text-end mt-4">
+						<a href="javascript:void(0);" class="btn-sach btn-sach-linear me-3" data-bs-dismiss="modal">
+							<span>Cancel</span>
+						</a>
+						<a href="javascript:void(0);" class="btn-sach bg-sach-dark" data-bs-dismiss="modal">
+							<span>Post</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Required vendors -->
 	<script src="vendor/global/global.min.js"></script>

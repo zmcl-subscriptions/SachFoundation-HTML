@@ -88,6 +88,10 @@ body::-webkit-scrollbar-thumb {
     white-space: nowrap;
 }
 
+.ws-normal {
+    white-space: normal !important;
+}
+
 hr:not([size]) {
     height: 1px;
 }
@@ -1048,6 +1052,12 @@ textarea::-webkit-scrollbar-thumb {
 
 .page-header .dvdr.w2 {
     width: 2px;
+}
+
+.page-header :is(.btn, .btn-sach, .btn-sach-linear) span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 /* ========== Page Header (Title) End ========== */
