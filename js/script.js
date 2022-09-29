@@ -344,6 +344,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ],
     dots: false,
     autoplayTimeout: 4000,
+    center: true,
     autoWidth: true,
     responsive: {
       0: {
@@ -362,7 +363,7 @@ document.addEventListener("DOMContentLoaded", function () {
   resources.owlCarousel({
     margin: 15,
     loop: true,
-    autoplay: false,
+    autoplay: true,
     nav: true,
     center: false,
     navText: [
