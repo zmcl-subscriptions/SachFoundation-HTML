@@ -176,7 +176,7 @@ hr {
 /* ========== Colors & Background End ========== */
 
 /* ========== Pagination Start ========== */
-.sach-pagination-round {}
+/* .sach-pagination-round {} */
 
 .sach-pagination-round ul {
     margin: 0px;
@@ -186,7 +186,7 @@ hr {
     gap: 8px;
 }
 
-.sach-pagination-round ul li {}
+/* .sach-pagination-round ul li {} */
 
 .sach-pagination-round ul li:is(:first-child, :last-child) {
     margin-inline: 8px;
@@ -286,6 +286,7 @@ hr {
 
 .btn.bg-sach-dark:hover {
     background-color: var(--theme-orange) !important;
+    border-color: var(--theme-orange) !important;
 }
 
 .btn-sach-lg {

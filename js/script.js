@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
   solutionsVideos.owlCarousel({
     loop: true,
     autoplay: true,
-    nav: true,
+    nav: false,
     dots: true,
     center: true,
     autoplayTimeout: 4000,
