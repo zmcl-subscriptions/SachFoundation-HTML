@@ -1119,6 +1119,10 @@ textarea::-webkit-scrollbar-thumb {
 
 
 /* ========== Sach Admin Table Start ========== */
+.table-responsive:has(table.sach-admin-table) {
+    min-height: 60vh;
+}
+
 table.sach-admin-table thead {
     background-color: var(--thead-bg);
     border-width: 1px 0px;
@@ -1224,6 +1228,10 @@ table.sach-admin-table tbody tr:nth-child(6n+0) td .userName .avtr {
     font-weight: 500;
     width: 100%;
     border: 1px dashed var(--theme-orange);
+}
+
+.readMore {
+    color: var(--theme-orange);
 }
 
 .userName {
