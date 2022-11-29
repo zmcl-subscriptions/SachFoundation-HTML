@@ -490,7 +490,7 @@
                                     <path d="M5 10H15" stroke="#EE6C4D" stroke-width="1.5" stroke-linecap="round" />
                                     <path d="M8.33398 14.168H11.6673" stroke="#EE6C4D" stroke-width="1.5" stroke-linecap="round" />
                                   </svg>
-                                  <span>Online</span>
+                                  <span>Offline</span>
                                 </li>
                                 <li>
                                   <div class="hosted_by">
@@ -530,8 +530,8 @@
                                 </div>
                               </div>
                               <div class="btn_wrp">
-                                <a href="#" class="btn btn-sach bg-sach">Attend</a>
-                                <a class="btn btn-sach btn-sach-linear" data-bs-toggle="collapse" href="#viewDetails" role="button" aria-expanded="false">View Details----</a>
+                                <a href="#" class="btn btn-sach bg-sach" data-bs-toggle="modal" data-bs-target="#eventTicket">View Ticket</a>
+                                <a class="btn btn-sach btn-sach-linear" data-bs-toggle="collapse" href="#viewDetails" role="button" aria-expanded="false">View Details</a>
                                 <a href="#" class="btn btn-sach btn-sach-linear" data-bs-toggle="modal" data-bs-target="#Decline">Decline</a>
                               </div>
                             </div>
@@ -1430,21 +1430,6 @@
 
 
 
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eventTicket2">
-    eventTicket
-  </button>
-
-  <!-- Ticket Modal -->
-  <div class="modal fade" id="eventTicket2" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-sm modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body p-0">
-          <img src="./Ticket.png" alt="ticket" class="img-fluid" />
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Ticket Modal -->
   <div class="modal fade" id="eventTicket" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-md modal-dialog-centered">
@@ -1767,12 +1752,6 @@
   <script src="vendor/owlCarousel/js/owl.carousel.min.js"></script>
   <script src="vendor/aos/js/aos.min.js"></script>
   <script src="js/script.js"></script>
-
-  <script>
-    $(function () {
-      $('#eventTicket').modal('show');
-    });
-  </script>
 </body>
 
 </html>
