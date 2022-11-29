@@ -6582,3 +6582,110 @@ ul.sach-pills li span:hover {
 }
 
 /* ========== Event Ticket End ========== */
+
+
+/* ========== Text to Speach (Blog) Start ========== */
+.textToSpeach-cont {
+    width: 360px;
+    height: auto;
+    background: #FFFFFF;
+    border-radius: 16px;
+    filter: drop-shadow(-9px -12px 42px rgba(238, 108, 77, 0.1));
+    position: fixed;
+    right: 3vh;
+    bottom: 3vh;
+    user-select: none;
+}
+
+.textToSpeach-wrp {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.close-player {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    background-color: var(--theme-dark);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transform: translate(50%, -50%);
+    cursor: pointer;
+}
+
+.player-timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.player-timer>span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--theme-dark);
+}
+
+.player-timer .player-progress {
+    height: 6px;
+    width: 100%;
+    background: rgba(36, 35, 35, 0.16);
+    border-radius: 10px;
+}
+
+.player-timer .player-progress .progress-ico {
+    position: relative;
+    height: 100%;
+    background-color: var(--theme-orange);
+    display: block;
+    border-radius: 10px;
+}
+
+.player-timer .player-progress .progress-ico::after {
+    content: '';
+    height: 6px;
+    width: 6px;
+    border-radius: 10px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 0 3px var(--theme-orange);
+}
+
+.player-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.player-btns img {
+    cursor: pointer;
+}
+
+.player-btns img:not(.play-pause) {
+    width: 24px;
+    height: 24px;
+}
+
+.player-btns img.play-pause {
+    width: 45px;
+    height: 45px;
+}
+
+/* ========== Text to Speach (Blog) End ========== */
