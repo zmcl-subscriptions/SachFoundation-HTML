@@ -71,6 +71,32 @@ hr {
     border: 0;
 }
 
+/* ========== Selection ========== */
+:-moz-selection {
+    background: var(--theme-orange);
+    color: #fff !important;
+}
+
+::-webkit-selection {
+    background: var(--theme-orange);
+    color: #fff !important;
+}
+
+::-o-selection {
+    background: var(--theme-orange);
+    color: #fff !important;
+}
+
+::-ms-selection {
+    background: var(--theme-orange);
+    color: #fff !important;
+}
+
+::selection {
+    background: var(--theme-orange);
+    color: #fff !important;
+}
+
 /* ========== Preloader ========== */
 #preloader {
     background-color: rgba(255, 255, 255, 0.6);
@@ -680,6 +706,57 @@ textarea::-webkit-scrollbar-thumb {
     font-size: 14px;
     line-height: 24px;
     color: var(--theme-dark-2);
+}
+
+.modalT2 .modal-content {
+    border-radius: 16px;
+    border: none;
+}
+
+.modalT2 .modal-content .modal-header {
+    display: flex;
+    justify-content: end;
+    border: none;
+    padding-bottom: 0px;
+}
+
+.modalT2 .modal-content .modal-header .modal-close {
+    position: relative;
+    top: auto;
+    right: auto;
+}
+
+.modal-icoList {
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0px;
+}
+
+.modal-icoList li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.modal-icoList li img {
+    width: 24px;
+    height: 24px;
+}
+
+.modal-icoList li span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #201429;
+}
+
+.inline-hr {
+    height: 1px;
+    background-color: var(--border-color);
 }
 
 /* ========== Sach Modal End ========== */

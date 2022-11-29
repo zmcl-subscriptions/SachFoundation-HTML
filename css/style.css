@@ -488,7 +488,8 @@ body:has(.header-white, .cms-hero-section, .login-container) {
 }
 
 .happiness-card:hover,
-.happiness-card.active {
+.happiness-card.active,
+.light-bg .happiness-card:first-child {
     background: var(--theme-orange);
     box-shadow: 3px 45px 61px -46px rgba(238, 108, 77, 0.48);
     -webkit-box-shadow: 3px 45px 61px -46px rgba(238, 108, 77, 0.48);
@@ -1002,7 +1003,7 @@ ul.blog-tags li span {
     font-size: 48px;
     line-height: 56px;
     letter-spacing: -0.5px;
-    color: #201429;
+    color: var(--theme-dark);
     margin: 10px 0px;
 }
 
@@ -1049,7 +1050,7 @@ ul.blog-tags li span {
     font-weight: 700;
     font-size: 18px;
     line-height: 32px;
-    color: #201429;
+    color: var(--theme-dark);
     margin-bottom: 36px;
 }
 
@@ -1135,7 +1136,7 @@ ul.b-list li::before {
     font-weight: 600;
     font-size: 16px;
     line-height: 28px;
-    color: #201429;
+    color: var(--theme-dark);
 }
 
 .blog-info-data ul.blog-data li b {
@@ -1176,7 +1177,7 @@ ul.b-list li::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #201429;
+    color: var(--theme-dark);
     border-radius: 32px;
     transition: 400ms;
 }
@@ -1240,7 +1241,7 @@ ul.b-list li::before {
     font-size: 24px;
     line-height: 40px;
     letter-spacing: -0.5px;
-    color: #201429;
+    color: var(--theme-dark);
 }
 
 .tableOfCont ul {
@@ -1868,7 +1869,7 @@ ul.b-list li::before {
     font-weight: 600;
     font-size: 16px;
     line-height: 28px;
-    color: #201429 !important;
+    color: var(--theme-dark) !important;
 }
 
 .searchbar .btn-group .dropdown-menu .dropdown-item .form-check .form-check-label i {
@@ -3084,7 +3085,7 @@ ul.video-share-like li svg {
     font-weight: 700;
     font-size: 16px;
     line-height: 28px;
-    color: #201429;
+    color: var(--theme-dark);
 }
 
 .resource-card .card-body .card-text {
@@ -3944,7 +3945,7 @@ ul.video-share-like li svg {
     width: 100%;
     right: -40px;
     bottom: -40px;
-    background: #201429;
+    background: var(--theme-dark);
     z-index: -1;
     border-radius: 0px 0px 30px 0px;
 }
@@ -4153,7 +4154,7 @@ ul.video-share-like li svg {
     font-size: 20px;
     line-height: 32px;
     letter-spacing: -0.5px;
-    color: #201429;
+    color: var(--theme-dark);
 }
 
 .sach-nav-tabs .nav {
@@ -5274,6 +5275,57 @@ ul.video-share-like li svg {
 .my_event .event-data-wrp ul.event_features li .hosted_by img {
     height: 32px;
     width: 32px;
+}
+
+.my_event .event-data-wrp .viewDtls_wrp {
+    display: flex;
+    align-items: start;
+    gap: 15px;
+    border-top: 1px solid var(--border-color);
+    padding: 15px 0px;
+    flex-direction: column;
+}
+
+.my_event .event-data-wrp .viewDtls_wrp .viewDtls {
+    display: flex;
+    flex-direction: column;
+}
+
+.my_event .event-data-wrp .viewDtls_wrp .viewDtls ._attendees {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.my_event .event-data-wrp .viewDtls_wrp .viewDtls ._attendees img {
+    width: 32px;
+    height: 32px;
+    flex: 1;
+    margin-right: -6px;
+}
+
+.my_event .event-data-wrp .viewDtls_wrp .viewDtls ._attendees span {
+    color: var(--theme-orange);
+    position: relative;
+    left: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.my_event .event-data-wrp .viewDtls_wrp .viewDtls span {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--theme-dark-2);
+}
+
+.my_event .event-data-wrp .viewDtls_wrp .viewDtls b {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--theme-dark);
 }
 
 .my_event .event-data-wrp .btn_wrp {
@@ -6422,3 +6474,111 @@ ul.sach-pills li span:hover {
 }
 
 /* ========== Contribute Page End ========== */
+
+/* ========== Event Ticket Start ========== */
+.ticket-body {
+    border-radius: 16px;
+}
+
+.ticket-body .ticket-wrp {
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 15px;
+    margin: 15px 0px 0px;
+}
+
+.ticket-body .ticket-wrp .ticket-pill {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 14px 0px;
+    margin: 0px;
+    gap: 8px;
+}
+
+.ticket-body .ticket-wrp .ticket-pill span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--theme-orange);
+    background: rgba(238, 108, 77, 0.08);
+    border-radius: 200px;
+    padding: 6px 14px;
+    cursor: pointer;
+}
+
+.ticket-body .ticket-wrp .event-head {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    padding: 8px 0px 10px;
+    color: var(--theme-dark);
+}
+
+.ticket-body .ticket-wrp ul.event-info {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    padding: 14px 0px;
+    margin: 0px;
+    gap: 15px;
+}
+
+.ticket-body .ticket-wrp ul.event-info li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.ticket-body .ticket-wrp ul.event-info li img {
+    width: 24px;
+    height: 24px;
+}
+
+.ticket-body .ticket-wrp ul.event-info li b {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--theme-dark);
+    display: block;
+    white-space: nowrap;
+}
+
+.eventHost {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.eventHost img {
+    width: 40px;
+    height: 40px;
+}
+
+.eventHost span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--theme-dark);
+}
+
+.attendeeInfo {
+    border-top: 2px dashed var(--border-color);
+    border-bottom: 2px dashed var(--border-color);
+    padding: 15px 0px;
+    margin: 10px 0px;
+}
+
+.evntInfoTTL {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--theme-dark-2);
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* ========== Event Ticket End ========== */

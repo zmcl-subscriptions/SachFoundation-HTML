@@ -536,3 +536,117 @@ ul.copyright-footer li a span {
 }
 
 /* ========== Footer Section End ========== */
+
+.categories-menu {
+    position: fixed !important;
+    top: 96px !important;
+    left: 0 !important;
+    right: 0px;
+    border-radius: 0px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: none !important;
+    pointer-events: all !important;
+    height: 48px;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0px 0px !important;
+    transition: all 0.5s;
+}
+
+header.header-scrolled .categories-menu {
+    top: 70px !important;
+}
+
+.v-scroll>div.dropdown {
+    width: fit-content;
+    min-width: initial !important;
+    position: relative !important;
+}
+
+.v-scroll>div.dropdown ul li {
+    min-width: initial !important;
+}
+
+/* .v-scroll>li.dropdown:hover>ul {
+    left: 0 !important;
+    position: absolute;
+    top: 45px !important;
+
+} */
+
+/* .v-scroll>li.dropdown>a {
+    width: fit-content;
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--theme-dark-2);
+    padding: 0px;
+} */
+
+/* .v-scroll>li.dropdown>a:hover {
+    background: none !important;
+} */
+
+/* .v-scroll>li.dropdown>ul>li {
+    left: -25px;
+    transform: translate(50%, 80%);
+} */
+
+.v-scroll {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 48px;
+    /* overflow-x: auto; */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.v-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.v-scroll .dropdown-toggle {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--theme-dark-2);
+}
+
+.v-scroll .dropdown-toggle::after {
+    content: '';
+    height: 10px;
+    width: 14px;
+    border: none;
+    background: url(../img/icons/dropdown-icon-down.svg) no-repeat;
+    background-position: center;
+    position: relative;
+    transform: translate(2px, 3px);
+}
+
+.v-scroll .dropdown-menu {
+    left: 0 !important;
+    top: 100% !important;
+    visibility: visible !important;
+    min-width: initial !important;
+}
+
+.v-scroll .dropdown-menu li {
+    padding: 0px 8px;
+}
+
+.v-scroll .dropdown-menu li .dropdown-item {
+    margin: 0px;
+    padding: 8px 14px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--theme-dark);
+}
